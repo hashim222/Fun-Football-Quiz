@@ -1,0 +1,37 @@
+body {
+  background-image: url(/assets/images/football-quiz-background-img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/* header */
+#header-hero{
+  text-align: center;
+  font-size: 140%;
+}
+#header-hero > h1 > span > a{
+  color: white;
+}
+.footbal-fun-icon{
+  background-color: white;
+  border-radius: 50%;
+  color: white;
+  height: 32px;
+}
+
+/* main conetnt */
+
+#section-hero{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
