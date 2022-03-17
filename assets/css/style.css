@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/images/football-quiz-background-img.jpg);
+  background-image: url(../images/football-quiz-background-img.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -25,13 +25,21 @@ li{
   background-color: white;
   border-radius: 50%;
   color: white;
-  height: 32px;
+  height: 2rem;
 }
 
-/* main conetnt */
-
+/* main content */
 #section-hero{
-  background-color: black;
+  background-color: rgba(0, 0, 255, 0.534);
   color: white;
   text-align: center;
+  width: 50%;
+  margin: 0 auto 0 auto;
+  height: 500px;
+}
+.section-header-content > h2{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-top: 10px;
 }
