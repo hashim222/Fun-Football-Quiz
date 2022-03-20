@@ -35,13 +35,12 @@ li {
 .footbal-fun-icon {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  color: rgb(255, 255, 255);
   height: 2rem;
 }
 
 /* main content */
 #section-hero {
-  background-color: rgb(137, 43, 226);
+  background:linear-gradient(rgb(24, 49, 83), rgb(137, 43, 226));
   color: rgb(255, 255, 255);
   text-align: center;
   width: 50%;
@@ -82,7 +81,7 @@ li {
 
 /* footer */
 #footer-hero {
-  background-color: rgba(137, 43, 226, 0.753);
+  background:linear-gradient(rgb(24, 49, 83), rgb(137, 43, 226));
   margin-top: 50px;
 }
 #footer-hero > ul {
@@ -97,7 +96,7 @@ li {
 
 /* introduction page */
 #quiz-introduction-hero {
-  background-color: rgb(137, 43, 226);
+  background:linear-gradient(rgb(24, 49, 83), rgb(137, 43, 226));
   color: rgb(255, 255, 255);
   text-align: center;
   width: 40%;
@@ -151,12 +150,36 @@ input[type="submit"] {
 }
 
 /* hidden text */
-/* .hidden-text {
-  background-color: grey;
-  padding: 130px;
+.hidden-text {
+  background-color: rgb(24, 49, 83);
   position: absolute;
   top: -50px;
-} */
+  width: 100%;
+  height: 480px;
+  border-radius: 50px;
+  display: none;
+}
+.close-quiz-info{
+    text-align: right;
+    margin: 30px;
+}
+.close-quiz-info > .fa-xmark{
+  cursor: pointer;
+  padding: 10px;
+  transition: 800ms;
+  font-size: 130%;
+}
+.close-quiz-info > .fa-xmark:hover{
+  transform: rotate(180deg) 
+}
+.hidden-text > h2{
+  margin: 40px;
+  font-size: 170%;
+}
+.hidden-text > p{
+  margin: 20px;
+  font-size: 120%;
+}
 /* screen sizes greater than 300px */
 @media screen and (min-width: 300px) {
   /* header */
