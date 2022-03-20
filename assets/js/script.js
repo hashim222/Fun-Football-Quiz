@@ -1,5 +1,5 @@
 const getBtnValue = document.querySelector('.btn-for-overlay-page')
-const hiddenText = document.querySelector('.hidden-text')
+const hiddenText = document.querySelector('#hidden-popup-text')
 const closeHiddenText = document.querySelector('.fa-xmark')
 
 function clickBtnValue(){
@@ -10,12 +10,4 @@ function clickBtnValue(){
     }
 }
 getBtnValue.addEventListener('click', clickBtnValue)
-
-function closeClickBtnValue(){
-    if(hiddenText.style.display === 'block'){
-     hiddenText.style.display = 'none'
-    }else{
-        hiddenText.style.display = 'block';
-    }
-}
-closeHiddenText.addEventListener('click', closeClickBtnValue)
+closeHiddenText.addEventListener('click', clickBtnValue)
