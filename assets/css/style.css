@@ -73,6 +73,9 @@ li {
   width: 70%;
   border-radius: 10px;
 }
+.quiz-option-buttons{
+  background-color: aqua;
+}
 .multiple-choices-answers:hover {
   background-color: rgb(240, 248, 255);
   color: rgb(0, 0, 0);
