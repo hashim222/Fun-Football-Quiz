@@ -26,9 +26,9 @@ let saveUser = document.querySelector("#save-user");
    */
   function saveUserName() {
     if(enterUser.value === ''){
-      alert(`Error! please enter your username`);
+        alert('username requird please')
     }else{
-      alert(`tnx! for sigining in, ${enterUser.value}`)
+      alert(`Thanx! for signing in, ${enterUser.value}`)
     }
   }
   saveUser.addEventListener("click", saveUserName);
