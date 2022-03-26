@@ -111,76 +111,51 @@
   },
 ];
 
-// variable for increase questions numbers
-let increaseQuestions = document.querySelector("#increase-questions");
-
-// variable for increase quiz if right scores
+/**
+ * Question number increase variable
+ */
+let increaseQuestionsNum = document.querySelector("#increase-questions");
+/**
+ * Question points increase variable
+ */
 let increaseQuizScore = document.querySelector("#increase-points");
-
-// varibale for Quiz Questions
+/**
+ * varibale for Quiz Questions
+ */
 let quizQuestionValue = document.querySelector(".quiz-questions");
-
-// varibale for Quiz Answers
-let quizAnsValue1 = document.querySelector(".btn1");
-let quizAnsValue2 = document.querySelector(".btn2");
-let quizAnsValue3 = document.querySelector(".btn3");
-let quizAnsValue4 = document.querySelector(".btn4");
-
-//In this variables multiple buttons are stored
+/**
+ * Answers variable
+ */
 let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 
-// Questions track
-let currentQuestions = 0;
-// Questions tracks
-let questionsTracks = 0;
-// Quiz points tracks
-let points = 100
+/**
+ * Empty object brackets
+ */
+ let currentQuestion = {};
+/**
+ * keep a track of question user has answerd
+ */
+let questionsCount;
+/**
+ * "points" is created to increases users points
+ */
+let points;
+
+/**
+ * Duplicate of array object "myQuestions"
+ */
+ let duplicateMyQuestions = [];
 
 /**
  * This function gets innervalue of questions elements and answers from html
  */
-function questionsData() {
-  let myQuestionsInShorts = myQuestions[currentQuestions];
-  quizQuestionValue.innerHTML = myQuestionsInShorts.question;
-  quizAnsValue1.innerHTML = myQuestionsInShorts.answers[1];
-  quizAnsValue2.innerHTML = myQuestionsInShorts.answers[2];
-  quizAnsValue3.innerHTML = myQuestionsInShorts.answers[3];
-  quizAnsValue4.innerHTML = myQuestionsInShorts.answers[4];
-}
-questionsData();
-/**
- * This for loops gets single questions buttons
- */
-for (let btns of multipleBtnsInQuiz) {
-  btns.addEventListener("click", function () {
-    let getAnswerFunc = getAnswer();
-    if (getAnswerFunc === correctResult) {
-      scores++
-    }
-    currentQuestions++;
-    if (currentQuestions < myQuestions.length) {
-      questionsData();
-    } else {
-      alert('good u answerd all questions')
-    }
-  });
-}
-
-// variable for array object correct ans in short
-let correctResult = myQuestions[currentQuestions].correctAns;
 
 /**
- * This fucntion gets the value of correct result
+ * as soon as quiz starts
  */
-function getAnswer() {
-  let answer;
-  multipleBtnsInQuiz.forEach(multipleChoice => {
-    if (multipleChoice.innerHTML) {
-      answer = multipleChoice.id;
-    }
-  });
-  return answer;
+function startQuiz() {
+ duplicateMyQuestions = [...myQuestions]
+ points = 100
+ questionsCount = 0
 }
-
-
-// if its right answer background color = green else red
+startQuiz();
