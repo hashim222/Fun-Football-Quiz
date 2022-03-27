@@ -1,7 +1,8 @@
 /**
  * All the Questions and Answers data stored in this array object
  */
-let myQuestions = [{
+ let myQuestions = [
+  {
     question: "Which country won the first ever World Cup in 1930?",
     answers: {
       optn1: "Australia",
@@ -12,7 +13,8 @@ let myQuestions = [{
     correctAns: 4,
   },
   {
-    question: "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
+    question:
+      "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
     answers: {
       optn1: "Tim Wiese",
       optn2: "Dwayne Johnson",
@@ -32,7 +34,8 @@ let myQuestions = [{
     correctAns: 3,
   },
   {
-    question: "English rock star Elton John was twice the owner of which football club?",
+    question:
+      "English rock star Elton John was twice the owner of which football club?",
     answers: {
       optn1: "Watford",
       optn2: "Liverpool",
@@ -42,7 +45,8 @@ let myQuestions = [{
     correctAns: 1,
   },
   {
-    question: "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
+    question:
+      "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
     answers: {
       optn1: "Cristiano Ronaldo",
       optn2: "Lionel Messi",
@@ -52,7 +56,8 @@ let myQuestions = [{
     correctAns: 2,
   },
   {
-    question: "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
+    question:
+      "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
     answers: {
       optn1: "Sporting",
       optn2: "FC Barcelona",
@@ -72,7 +77,8 @@ let myQuestions = [{
     correctAns: 4,
   },
   {
-    question: "Ronaldo helped Portugal win the European Championship in which year?",
+    question:
+      "Ronaldo helped Portugal win the European Championship in which year?",
     answers: {
       optn1: "2020",
       optn2: "2016",
@@ -82,7 +88,8 @@ let myQuestions = [{
     correctAns: 2,
   },
   {
-    question: "Which German multinational sportswear company is Messi an ambassador for?",
+    question:
+      "Which German multinational sportswear company is Messi an ambassador for?",
     answers: {
       optn1: "Nike",
       optn2: "Gucci",
@@ -92,7 +99,8 @@ let myQuestions = [{
     correctAns: 3,
   },
   {
-    question: "In which year did the European Championship expand from 16 teams to 24 teams?",
+    question:
+      "In which year did the European Championship expand from 16 teams to 24 teams?",
     answers: {
       optn1: "Euro 2016",
       optn2: "Euro 2012",
@@ -147,43 +155,66 @@ function startQuiz() {
   questionsCount = 0;
   footballGameData();
 }
-
 function footballGameData() {
-  questionsCount++
+  /**
+   * After the last question answered, this statement will try to restart the quiz questions
+   */
+  if (
+    duplicateMyQuestions.length === 0 ||
+    questionsCount > myQuestions.length
+  ) {
+    return window.location.reload();
+  }
+  questionsCount++;
+  increaseQuestionsNum.innerHTML = questionsCount;
+
   let generatesIndex = generatesRandomQuiz();
   currentQuestion = duplicateMyQuestions[generatesIndex];
   quizQuestionValue.innerHTML = currentQuestion.question;
   multipleBtnsInQuiz.forEach(function (btns) {
     /**
-     * variable for "data-value" attribute from inside the html 
+     * variable for "data-value" attribute from inside the html
      */
-    let btnsValue = btns.getAttribute('data-value')
-    btns.innerHTML = currentQuestion.answers['optn' + btnsValue]
+    let btnsValue = btns.getAttribute("data-value");
+    btns.innerHTML = currentQuestion.answers["optn" + btnsValue];
   });
+  /**
+   * This will prevent repeating the previous questions
+   */
+  duplicateMyQuestions.splice(generatesIndex, 1);
 }
-multipleBtnsInQuiz.forEach(btns => {
-  btns.addEventListener('click', function (e) {
+multipleBtnsInQuiz.forEach((btns) => {
+  btns.addEventListener("click", function (e) {
     /**
      * Gets current value from innerhtml when clicked
      */
-    let usersSelects = e.currentTarget
+    let usersSelects = e.currentTarget;
     /**
-     * gets the value inside "data-value" attribute
+     * gets the value from the inside of "data-value" attribute
      */
-    let usersSelectedValue = usersSelects.getAttribute('data-value')
+    let usersSelectedValue = usersSelects.getAttribute("data-value");
     /**
-     * Matches the value userseclted answers to correct answers
+     * compares users selected value and correct answer
      */
-    let checkIfTrue = parseInt(usersSelectedValue) === currentQuestion.correctAns;
-    console.log(checkIfTrue);
-    footballGameData()
-  })
-})
+    let checkIfTrue =
+      parseInt(usersSelectedValue) === currentQuestion.correctAns
+        ? "correct-answer"
+        : "incorrect-answer";
+    /**
+     * setTimeout fucntion was added to slow down speed for next question
+     */
+    usersSelects.classList.add(checkIfTrue);
+    setTimeout(function () {
+      usersSelects.classList.remove(checkIfTrue);
+      footballGameData();
+    }, 800);
+  });
+});
 /**
- * generates random questions in this
+ * generates random questions in this function
  */
 function generatesRandomQuiz() {
-  let randomGenerates = Math.floor(Math.random() * myQuestions.length);
+  let randomGenerates = Math.floor(Math.random() * duplicateMyQuestions.length);
   return randomGenerates;
 }
 startQuiz();

@@ -82,6 +82,12 @@ li {
   padding: 15px;
   transition: 100ms;
 }
+.correct-answer, .correct-answer:hover{
+  background-color: green;
+}
+.incorrect-answer, .incorrect-answer:hover{
+  background-color: red;
+}
 
 /* footer */
 #footer-hero {
