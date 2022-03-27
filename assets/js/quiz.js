@@ -5,10 +5,10 @@
   {
     question: "Which country won the first ever World Cup in 1930?",
     answers: {
-      1: "Australia",
-      2: "England",
-      3: "Spain",
-      4: "Uruguay",
+      optn1: "Australia",
+      optn2: "England",
+      optn3: "Spain",
+      optn4: "Uruguay",
     },
     correctAns: 4,
   },
@@ -16,20 +16,20 @@
     question:
       "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
     answers: {
-      1: "Tim Wiese",
-      2: "Dwayne Johnson",
-      3: "Roman Reigns",
-      4: "Brock Lesnar",
+      optn1: "Tim Wiese",
+      optn2: "Dwayne Johnson",
+      optn3: "Roman Reigns",
+      optn4: "Brock Lesnar",
     },
     correctAns: 1,
   },
   {
     question: "Which former Tottenham manager has competed in the Dakar Rally?",
     answers: {
-      1: "Harry Kane",
-      2: "Hugo Lloris",
-      3: "Andre Villas-Boas",
-      4: "Eric Dier",
+      optn1: "Harry Kane",
+      optn2: "Hugo Lloris",
+      optn3: "Andre Villas-Boas",
+      optn4: "Eric Dier",
     },
     correctAns: 3,
   },
@@ -37,10 +37,10 @@
     question:
       "English rock star Elton John was twice the owner of which football club?",
     answers: {
-      1: "Watford",
-      2: "Liverpool",
-      3: "Leeds United",
-      4: "Everton",
+      optn1: "Watford",
+      optn2: "Liverpool",
+      optn3: "Leeds United",
+      optn4: "Everton",
     },
     correctAns: 1,
   },
@@ -48,10 +48,10 @@
     question:
       "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
     answers: {
-      1: "Cristiano Ronaldo",
-      2: "Lionel Messi",
-      3: "Pogba",
-      4: "Eden Hazard",
+      optn1: "Cristiano Ronaldo",
+      optn2: "Lionel Messi",
+      optn3: "Pogba",
+      optn4: "Eden Hazard",
     },
     correctAns: 2,
   },
@@ -59,20 +59,20 @@
     question:
       "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
     answers: {
-      1: "Sporting",
-      2: "FC Barcelona",
-      3: "Manchester United",
-      4: "Manchester City",
+      optn1: "Sporting",
+      optn2: "FC Barcelona",
+      optn3: "Manchester United",
+      optn4: "Manchester City",
     },
     correctAns: 1,
   },
   {
     question: "Who is the Champions League's top goalscorer of all time?",
     answers: {
-      1: "Mohamed Salah",
-      2: "Neymar Jr",
-      3: "Lionel Messi",
-      4: "Cristiano Ronaldo",
+      optn1: "Mohamed Salah",
+      optn2: "Neymar Jr",
+      optn3: "Lionel Messi",
+      optn4: "Cristiano Ronaldo",
     },
     correctAns: 4,
   },
@@ -80,10 +80,10 @@
     question:
       "Ronaldo helped Portugal win the European Championship in which year?",
     answers: {
-      1: "2020",
-      2: "2016",
-      3: "2012",
-      4: "2008",
+      optn1: "2020",
+      optn2: "2016",
+      optn3: "2012",
+      optn4: "2008",
     },
     correctAns: 2,
   },
@@ -91,10 +91,10 @@
     question:
       "Which German multinational sportswear company is Messi an ambassador for?",
     answers: {
-      1: "Nike",
-      2: "Gucci",
-      3: "Adidas",
-      4: "Fila",
+      optn1: "Nike",
+      optn2: "Gucci",
+      optn3: "Adidas",
+      optn4: "Fila",
     },
     correctAns: 3,
   },
@@ -102,10 +102,10 @@
     question:
       "In which year did the European Championship expand from 16 teams to 24 teams?",
     answers: {
-      1: "Euro 2016",
-      2: "Euro 2012",
-      3: "World Cup 2014",
-      4: "World Cup 2018",
+      optn1: "Euro 2016",
+      optn2: "Euro 2012",
+      optn3: "World Cup 2014",
+      optn4: "World Cup 2018",
     },
     correctAns: 1,
   },
@@ -131,7 +131,7 @@ let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 /**
  * Empty object brackets
  */
- let currentQuestion = {};
+let currentQuestion = {};
 /**
  * keep a track of question user has answerd
  */
@@ -144,18 +144,35 @@ let points;
 /**
  * Duplicate of array object "myQuestions"
  */
- let duplicateMyQuestions = [];
-
-/**
- * This function gets innervalue of questions elements and answers from html
- */
+let duplicateMyQuestions = [];
 
 /**
  * as soon as quiz starts
  */
 function startQuiz() {
- duplicateMyQuestions = [...myQuestions]
- points = 100
- questionsCount = 0
+  duplicateMyQuestions = [...myQuestions];
+  points = 100;
+  questionsCount = 0;
+  footballGameData();
+}
+function footballGameData() {
+  let generatesIndex = generatesRandomQuiz();
+  currentQuestion = duplicateMyQuestions[generatesIndex];
+  quizQuestionValue.innerHTML = currentQuestion.question;
+  multipleBtnsInQuiz.forEach(function (btns) {
+  /**
+   * variable for "data-value" attribute from inside the html 
+   */
+  let btnsValue = btns.getAttribute('data-value')
+   btns.innerHTML = currentQuestion.answers['optn' + btnsValue]
+});
+}
+/**
+ * generates random questions in this
+ */
+function generatesRandomQuiz() {
+  let randomGenerates = Math.floor(Math.random() * myQuestions.length);
+  return randomGenerates;
 }
 startQuiz();
+
