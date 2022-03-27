@@ -1,8 +1,7 @@
 /**
  * All the Questions and Answers data stored in this array object
  */
- let myQuestions = [
-  {
+let myQuestions = [{
     question: "Which country won the first ever World Cup in 1930?",
     answers: {
       optn1: "Australia",
@@ -13,8 +12,7 @@
     correctAns: 4,
   },
   {
-    question:
-      "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
+    question: "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
     answers: {
       optn1: "Tim Wiese",
       optn2: "Dwayne Johnson",
@@ -34,8 +32,7 @@
     correctAns: 3,
   },
   {
-    question:
-      "English rock star Elton John was twice the owner of which football club?",
+    question: "English rock star Elton John was twice the owner of which football club?",
     answers: {
       optn1: "Watford",
       optn2: "Liverpool",
@@ -45,8 +42,7 @@
     correctAns: 1,
   },
   {
-    question:
-      "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
+    question: "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
     answers: {
       optn1: "Cristiano Ronaldo",
       optn2: "Lionel Messi",
@@ -56,8 +52,7 @@
     correctAns: 2,
   },
   {
-    question:
-      "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
+    question: "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
     answers: {
       optn1: "Sporting",
       optn2: "FC Barcelona",
@@ -77,8 +72,7 @@
     correctAns: 4,
   },
   {
-    question:
-      "Ronaldo helped Portugal win the European Championship in which year?",
+    question: "Ronaldo helped Portugal win the European Championship in which year?",
     answers: {
       optn1: "2020",
       optn2: "2016",
@@ -88,8 +82,7 @@
     correctAns: 2,
   },
   {
-    question:
-      "Which German multinational sportswear company is Messi an ambassador for?",
+    question: "Which German multinational sportswear company is Messi an ambassador for?",
     answers: {
       optn1: "Nike",
       optn2: "Gucci",
@@ -99,8 +92,7 @@
     correctAns: 3,
   },
   {
-    question:
-      "In which year did the European Championship expand from 16 teams to 24 teams?",
+    question: "In which year did the European Championship expand from 16 teams to 24 teams?",
     answers: {
       optn1: "Euro 2016",
       optn2: "Euro 2012",
@@ -151,22 +143,42 @@ let duplicateMyQuestions = [];
  */
 function startQuiz() {
   duplicateMyQuestions = [...myQuestions];
-  points = 100;
+  points = 0;
   questionsCount = 0;
   footballGameData();
 }
+
 function footballGameData() {
+  questionsCount++
   let generatesIndex = generatesRandomQuiz();
   currentQuestion = duplicateMyQuestions[generatesIndex];
   quizQuestionValue.innerHTML = currentQuestion.question;
   multipleBtnsInQuiz.forEach(function (btns) {
-  /**
-   * variable for "data-value" attribute from inside the html 
-   */
-  let btnsValue = btns.getAttribute('data-value')
-   btns.innerHTML = currentQuestion.answers['optn' + btnsValue]
-});
+    /**
+     * variable for "data-value" attribute from inside the html 
+     */
+    let btnsValue = btns.getAttribute('data-value')
+    btns.innerHTML = currentQuestion.answers['optn' + btnsValue]
+  });
 }
+multipleBtnsInQuiz.forEach(btns => {
+  btns.addEventListener('click', function (e) {
+    /**
+     * Gets current value from innerhtml when clicked
+     */
+    let usersSelects = e.currentTarget
+    /**
+     * gets the value inside "data-value" attribute
+     */
+    let usersSelectedValue = usersSelects.getAttribute('data-value')
+    /**
+     * Matches the value userseclted answers to correct answers
+     */
+    let checkIfTrue = parseInt(usersSelectedValue) === currentQuestion.correctAns;
+    console.log(checkIfTrue);
+    footballGameData()
+  })
+})
 /**
  * generates random questions in this
  */
@@ -175,4 +187,3 @@ function generatesRandomQuiz() {
   return randomGenerates;
 }
 startQuiz();
-
