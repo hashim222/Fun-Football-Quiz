@@ -159,10 +159,7 @@ function footballGameData() {
   /**
    * After the last question answered, this statement will try to restart the quiz questions
    */
-  if (
-    duplicateMyQuestions.length === 0 ||
-    questionsCount > myQuestions.length
-  ) {
+  if(duplicateMyQuestions.length === 0 || questionsCount > myQuestions.length) {
     return window.location.reload();
   }
   questionsCount++;
@@ -200,16 +197,30 @@ multipleBtnsInQuiz.forEach((btns) => {
       parseInt(usersSelectedValue) === currentQuestion.correctAns
         ? "correct-answer"
         : "incorrect-answer";
+
+    if (checkIfTrue === "correct-answer") {
+      increaseUsersPoints(points);
+    }
+
+    usersSelects.classList.add(checkIfTrue);
     /**
      * setTimeout fucntion was added to slow down speed for next question
      */
-    usersSelects.classList.add(checkIfTrue);
     setTimeout(function () {
       usersSelects.classList.remove(checkIfTrue);
       footballGameData();
     }, 800);
   });
 });
+/**
+ * this function will increases users points if their answer is correct
+ */
+function increaseUsersPoints() {
+  let increasePoints = 100;
+  points = points + increasePoints;
+  increaseQuizScore.innerHTML = points;
+  return increasePoints;
+}
 /**
  * generates random questions in this function
  */
