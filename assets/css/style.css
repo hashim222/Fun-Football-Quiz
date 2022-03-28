@@ -57,6 +57,10 @@ li {
 }
 
 /* questins and answers section */
+.quiz-result > h1{
+  font-size: 160%;
+  padding: 200px;
+}
 #quiz-qus-and-ans-hero {
   margin-top: 2rem;
   padding: 1rem;
@@ -157,6 +161,12 @@ input {
 input[type="submit"] {
   cursor: pointer;
   border-radius: 20px;
+}
+.correct-answer, .correct-answer:hover{
+  background-color: green;
+}
+.incorrect-answer, .incorrect-answer:hover{
+  background-color: red;
 }
 
 /* hidden text */

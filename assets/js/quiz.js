@@ -128,6 +128,7 @@ let quizQuestionValue = document.querySelector(".quiz-questions");
  */
 let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 
+let quizResult = document.querySelector(".quiz-result");
 /**
  * Empty object brackets
  */
@@ -140,7 +141,10 @@ let questionsCount;
  * "points" is created to increases users points
  */
 let points;
-
+/**
+ * "calculateTotalCorrectAnswers" is created to caluclate total correct result of user
+ */
+let calculateTotalCorrectAnswers;
 /**
  * Duplicate of array object "myQuestions"
  */
@@ -153,18 +157,20 @@ function startQuiz() {
   duplicateMyQuestions = [...myQuestions];
   points = 0;
   questionsCount = 0;
+  calculateTotalCorrectAnswers = 0;
   footballGameData();
 }
+let TOTAL_ANSWERS = 10;
 function footballGameData() {
   /**
    * After the last question answered, this statement will try to restart the quiz questions
    */
-  if(duplicateMyQuestions.length === 0 || questionsCount > myQuestions.length) {
-    return window.location.reload();
+  if (duplicateMyQuestions.length === 0 ||
+    questionsCount > myQuestions.length){
+    return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1>`);
   }
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
-
   let generatesIndex = generatesRandomQuiz();
   currentQuestion = duplicateMyQuestions[generatesIndex];
   quizQuestionValue.innerHTML = currentQuestion.question;
@@ -197,9 +203,17 @@ multipleBtnsInQuiz.forEach((btns) => {
       parseInt(usersSelectedValue) === currentQuestion.correctAns
         ? "correct-answer"
         : "incorrect-answer";
-
+    /**
+     * this statments checks the value if the answer is correct increase points
+     */
     if (checkIfTrue === "correct-answer") {
       increaseUsersPoints(points);
+    }
+    /**
+     * this statments checks the value if the answer is correct increase questions
+     */
+    if (checkIfTrue === "correct-answer") {
+      increaseQuestionsResultInTotal();
     }
 
     usersSelects.classList.add(checkIfTrue);
@@ -221,6 +235,15 @@ function increaseUsersPoints() {
   increaseQuizScore.innerHTML = points;
   return increasePoints;
 }
+/**
+ *  this function will increases users correct questions if their answer is correct
+ */
+function increaseQuestionsResultInTotal() {
+  let calculateResult = 1;
+  calculateTotalCorrectAnswers = calculateTotalCorrectAnswers + calculateResult;
+  return calculateResult;
+}
+
 /**
  * generates random questions in this function
  */
