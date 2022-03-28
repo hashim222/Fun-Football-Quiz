@@ -127,7 +127,9 @@ let quizQuestionValue = document.querySelector(".quiz-questions");
  * Answers variable
  */
 let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
-
+/**
+ * variable for users total correct answer
+ */
 let quizResult = document.querySelector(".quiz-result");
 /**
  * Empty object brackets
