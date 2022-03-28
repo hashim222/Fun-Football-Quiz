@@ -128,7 +128,11 @@ let quizQuestionValue = document.querySelector(".quiz-questions");
  */
 let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 
+/**
+ * after the user has answerd all the questions it will give them options of restart and home button
+ */
 let quizResult = document.querySelector(".quiz-result");
+
 /**
  * Empty object brackets
  */
@@ -163,7 +167,7 @@ function startQuiz() {
 let TOTAL_ANSWERS = 10;
 function footballGameData() {
   /**
-   * After the last question answered, this statement will try to restart the quiz questions
+   * After the last question answered, this statement will ask users to either try again or or take them into the home page
    */
   if (duplicateMyQuestions.length === 0 || questionsCount > myQuestions.length){
     if(calculateTotalCorrectAnswers >= 8) {
@@ -173,8 +177,9 @@ function footballGameData() {
     } else{
       alert('better luck next time!😩')
     }
-   return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1>`;
+     return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`
   }
+
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
   let generatesIndex = generatesRandomQuiz();

@@ -59,7 +59,16 @@ li {
 /* questins and answers section */
 .quiz-result > h1{
   font-size: 160%;
-  padding: 200px;
+  padding: 50px;
+}
+.quiz-result > p{
+  font-size: 120%;
+}
+.quiz-result button{
+  margin-top: 50px;
+ font-size: 130%;
+ padding: 20px;
+ cursor: pointer;
 }
 #quiz-qus-and-ans-hero {
   margin-top: 2rem;
