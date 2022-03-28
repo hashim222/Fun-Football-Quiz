@@ -127,9 +127,7 @@ let quizQuestionValue = document.querySelector(".quiz-questions");
  * Answers variable
  */
 let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
-/**
- * variable for users total correct answer
- */
+
 let quizResult = document.querySelector(".quiz-result");
 /**
  * Empty object brackets
@@ -167,9 +165,15 @@ function footballGameData() {
   /**
    * After the last question answered, this statement will try to restart the quiz questions
    */
-  if (duplicateMyQuestions.length === 0 ||
-    questionsCount > myQuestions.length){
-    return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1>`);
+  if (duplicateMyQuestions.length === 0 || questionsCount > myQuestions.length){
+    if(calculateTotalCorrectAnswers >= 8) {
+      alert('You know what football is all about, sir 😎')
+    } else if (calculateTotalCorrectAnswers >= 5) {
+      alert('you should try again!🤔')
+    } else{
+      alert('better luck next time!😩')
+    }
+   return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1>`;
   }
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;

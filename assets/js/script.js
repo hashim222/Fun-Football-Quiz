@@ -6,7 +6,12 @@ let closeHiddenTextBtn = document.querySelector(".fa-xmark");
 // variable for Username
 let enterUser = document.querySelector("#enter-user");
 let saveUser = document.querySelector("#save-user");
-
+    enterUser.focus()
+    enterUser.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        saveUserName()
+      }
+    })
 /**
  * This fucntion is for popup page for Quiz information
  */
@@ -28,7 +33,8 @@ let saveUser = document.querySelector("#save-user");
     if(enterUser.value === ''){
         alert('username requird please')
     }else{
-      alert(`Thanx! for signing in, ${enterUser.value}`)
+      alert(`Thanx! for signing in, ${enterUser.value}👋`)
     }
+    enterUser.value = ''
   }
   saveUser.addEventListener("click", saveUserName);
