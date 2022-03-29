@@ -26,6 +26,72 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
   The font family used throughout this site is ["Amiko", sans-serif;](https://fonts.google.com/specimen/Amiko)
 
 # Features
-* The quiz is built using two separate HTML files 
-   * In Index.html, users can see how the quiz works, how to start it and enter their usernames.
-   * Quiz.html contains all the quiz questions and answers
+* ### This Quiz Is Built Using Two Separate HTML Files 
+   * On the quiz introduction page, users can see how the quiz works, how to start the quiz and enter their usernames.
+   * quiz questions and answers page contains all the quiz questions and answers.     
+
+* ### Quiz Introduction Page
+
+* ### Quiz Questions And Answers Page
+
+## Wireframe
+## Testings
+## Technologies Used
+* These are the technologies that were used to make this project.
+
+  * [HTML](https://en.wikipedia.org/wiki/HTML)
+  
+  * [CSS](https://en.wikipedia.org/wiki/CSS)
+
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  
+  * [CDNJS](https://cdnjs.com/libraries/font-awesome) 
+  
+  * [Font Awesome](https://fontawesome.com/)
+  
+  * [Google icons](https://fonts.google.com/icons)
+  
+  * [Google font](https://fonts.google.com/)
+  
+  * [W3School](https://www.w3schools.com/)
+  
+  * [AM I RESPONSIVE](http://ami.responsivedesign.is/)
+  
+  * [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+  * [git](https://git-scm.com/)
+
+  * [github](https://github.com/)
+
+  * [gitpod workspace](https://gitpod.io/workspaces)
+
+## Deplyoment
+
+* The site was deployed to GitHub pages. Here are the steps:
+  * Navigate the Settings tab in the GitHub [repository](https://github.com/hashim222/Fun-Football-Quiz).
+  * From the source section drop-down menu, select the Master Branch
+  * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.  
+
+  You can find the link here [Fun Football Quiz](https://github.com/hashim222/Fun-Football-Quiz)
+
+   ![this is an image showing how i did deploy repo in github]()
+
+ * ### Clone the project
+
+   * Follow these steps to make a clone of the gym for womens repo:    
+        * If the user wants to clone this project, the user needs to locate [Fun Football Quiz repository](https://github.com/hashim222/Fun-Football-Quiz) Code in the dropdown menu and select either download zip or open with Github Desktop.
+
+          ![this is an image for how cloning by download zip]()
+
+        * A user can copy and paste the link into their git terminal by clicking GitHub CLI and the Copy button in the Code Dropdown menu.
+                    
+      OR
+        ```bash
+         gh repo clone hashim222/Fun-Football-Quiz
+        ```
+
+        ![this is an image for how cloning by links]()
+             
+## Credits
+
+
