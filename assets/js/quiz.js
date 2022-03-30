@@ -135,13 +135,12 @@ let quizResult = document.querySelector(".quiz-result");
  * display result
  */
 let displayResult = document.querySelector('.review-users')
+
+let showResult = document.querySelector('#show-result')
 /**
  * hide result
  */
  let hideResult = document.querySelector('.fa-xmark')
- /**
-  * let showResult = document.querySelector('#show-result')
-  */
 
 /**
  * Empty object brackets
