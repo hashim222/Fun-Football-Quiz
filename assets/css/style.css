@@ -49,6 +49,32 @@ li {
   padding-bottom: 30px;
   border-radius: 10px;
 }
+/* hidden overlay for result */
+.review-users{
+  font-style: italic;
+  margin-bottom: 10px;
+  background-color: rgb(24, 49, 83);
+  display: none;
+}
+.review-users > h2{
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.review-users > p{
+  text-align: right;
+  padding-right: 20px;
+}
+.review-users > p > .fa-xmark{
+  cursor: pointer;
+  padding: 10px;
+  transition: 800ms;
+  font-size: 150%;
+}
+.review-users > p > .fa-xmark:hover{
+  transform: rotate(180deg) 
+}
+
+
 .section-header-content > h2 {
   display: flex;
   justify-content: space-between;
@@ -59,13 +85,15 @@ li {
 /* questins and answers section */
 .quiz-result > h1{
   font-size: 160%;
-  padding: 50px;
+  padding: 30px;
 }
 .quiz-result > p{
   font-size: 120%;
+  padding: 10px;
+  margin-top: 10px;
 }
 .quiz-result button{
-  margin-top: 50px;
+  margin-top: 30px;
  font-size: 130%;
  padding: 20px;
  cursor: pointer;
@@ -135,6 +163,10 @@ li {
 }
 #quiz-introduction-hero .footbal-fun-icon {
   height: 1.7rem;
+}
+.welcome-user{
+  font-style: italic;
+  color: red;
 }
 .quiz-introduction-content > p,
 input,

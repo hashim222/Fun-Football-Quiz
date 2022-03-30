@@ -2,6 +2,8 @@
 let openHiddenTextBtn = document.querySelector(".btn-for-overlay-page");
 let showHiddenText = document.querySelector("#hidden-popup-text");
 let closeHiddenTextBtn = document.querySelector(".fa-xmark");
+// variables for welcome users
+let welcomeUserText = document.querySelector('.welcome-user')
 
 // variable for Username
 let enterUser = document.querySelector("#enter-user");
@@ -9,7 +11,7 @@ let saveUser = document.querySelector("#save-user");
     enterUser.focus()
     enterUser.addEventListener('keydown', function(e){
       if(e.key === 'Enter'){
-        saveUserName()
+        addUserName()
       }
     })
 /**
@@ -27,14 +29,17 @@ let saveUser = document.querySelector("#save-user");
   closeHiddenTextBtn.addEventListener("click", overlayPage);
   
   /**
-   *  This fucntion save Username in this Quiz
+   *  This fucntion adds Username in this Quiz
    */
-  function saveUserName() {
+  function addUserName() {
     if(enterUser.value === ''){
-        alert('username requird please')
+      welcomeUserText.innerHTML = 'username requird please!'
     }else{
-      alert(`Thanx! for signing in, ${enterUser.value}👋`)
+      welcomeUserText.innerHTML = `Thanx! for signing in, ${enterUser.value}👋`
+      welcomeUserText.style.color = 'rgb(40, 221, 40)'
+      setTimeout(function(){
+        window.location.assign('quiz.html')
+      }, 1200)
     }
-    enterUser.value = ''
   }
-  saveUser.addEventListener("click", saveUserName);
+  saveUser.addEventListener("click", addUserName);

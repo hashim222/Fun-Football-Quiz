@@ -110,7 +110,6 @@
     correctAns: 1,
   },
 ];
-
 /**
  * Question number increase variable
  */
@@ -132,6 +131,17 @@ let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
  * after the user has answerd all the questions it will give them options of restart and home button
  */
 let quizResult = document.querySelector(".quiz-result");
+/**
+ * display result
+ */
+let displayResult = document.querySelector('.review-users')
+/**
+ * hide result
+ */
+ let hideResult = document.querySelector('.fa-xmark')
+ /**
+  * let showResult = document.querySelector('#show-result')
+  */
 
 /**
  * Empty object brackets
@@ -164,28 +174,37 @@ function startQuiz() {
   calculateTotalCorrectAnswers = 0;
   footballGameData();
 }
-let TOTAL_ANSWERS = 10;
 function footballGameData() {
+  let TOTAL_ANSWERS = 10;
   /**
    * After the last question answered, this statement will ask users to either try again or or take them into the home page
    */
-  if (duplicateMyQuestions.length === 0 || questionsCount > myQuestions.length){
-    if(calculateTotalCorrectAnswers >= 8) {
-      alert('You know what football is all about, sir 😎')
+  if (
+    duplicateMyQuestions.length === 0 ) {
+    if (calculateTotalCorrectAnswers >= 8) {
+      showResult.innerHTML = "You know what football is all about, sir 😎"
+      overlayPage()
     } else if (calculateTotalCorrectAnswers >= 5) {
-      alert('you should try again!🤔')
-    } else{
-      alert('better luck next time!😩')
+      showResult.innerHTML = "you should try again!🤔"
+      overlayPage()
+    } else {
+      showResult.innerHTML = "better luck next time!😩"
+      overlayPage()
     }
-     return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`
+    setTimeout(function(){
+      overlayPage()
+    }, 2500)
+    return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`);
   }
-
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
   let generatesIndex = generatesRandomQuiz();
   currentQuestion = duplicateMyQuestions[generatesIndex];
   quizQuestionValue.innerHTML = currentQuestion.question;
-  multipleBtnsInQuiz.forEach(function (btns) {
+  /**
+   * multiple btns stored inside 'btns'
+   */
+  multipleBtnsInQuiz.forEach(function (btns) {    
     /**
      * variable for "data-value" attribute from inside the html
      */
@@ -197,6 +216,7 @@ function footballGameData() {
    */
   duplicateMyQuestions.splice(generatesIndex, 1);
 }
+
 multipleBtnsInQuiz.forEach((btns) => {
   btns.addEventListener("click", function (e) {
     /**
@@ -262,4 +282,17 @@ function generatesRandomQuiz() {
   let randomGenerates = Math.floor(Math.random() * duplicateMyQuestions.length);
   return randomGenerates;
 }
+/**
+ * This fucntion is for popup page for Quiz result
+ */
+ function overlayPage() {
+  if (displayResult.style.display === "block") {
+    displayResult.style.display = "none";
+  } else {
+    displayResult.style.display = "block";
+  }
+}
+// This will Close popup page for Quiz result
+hideResult.addEventListener("click", overlayPage);
+
 startQuiz();
