@@ -74,23 +74,23 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
   You can find the link here [Fun Football Quiz](https://github.com/hashim222/Fun-Football-Quiz)
 
-   ![this is an image showing how i did deploy repo in github]()
+    ![this is an image showing how i did deploy repo in github](/assets/images/Readme-Images/github-repo-deploy.png)
 
  * ### Clone the project
 
-   * Follow these steps to make a clone of the gym for womens repo:    
-        * If the user wants to clone this project, the user needs to locate [Fun Football Quiz repository](https://github.com/hashim222/Fun-Football-Quiz) Code in the dropdown menu and select either download zip or open with Github Desktop.
+   * Follow these steps to make a clone of the Fun-Football-Quiz repo:    
+    * If the user wants to clone this project, the user needs to locate [Fun Football Quiz repository](https://github.com/hashim222/Fun-Football-Quiz) Code in the dropdown menu and select either download zip or open with Github Desktop.
 
-          ![this is an image for how cloning by download zip]()
+    ![this is an image for how cloning by download zip](/assets/images/Readme-Images/cloning-zip-download.png)
 
-        * A user can copy and paste the link into their git terminal by clicking GitHub CLI and the Copy button in the Code Dropdown menu.
+     * A user can copy and paste the link into their git terminal by clicking GitHub CLI and the Copy button in the Code Dropdown menu.
                     
-      OR
-        ```bash
-         gh repo clone hashim222/Fun-Football-Quiz
-        ```
+    OR
+      ```bash
+       gh repo clone hashim222/Fun-Football-Quiz
+      ```
 
-        ![this is an image for how cloning by links]()
+    ![this is an image for how cloning by links](/assets/images/Readme-Images/cloning-links.png)
              
 ## Credits
 
