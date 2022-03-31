@@ -179,7 +179,7 @@ function footballGameData() {
    * After the last question answered, this statement will ask users to either try again or or take them into the home page
    */
   if (
-    duplicateMyQuestions.length === 0 ) {
+    duplicateMyQuestions.length === 0) {
     if (calculateTotalCorrectAnswers >= 8) {
       showResult.innerHTML = "You know what football is all about, sir 😎"
       overlayPage()
@@ -192,7 +192,7 @@ function footballGameData() {
     }
     setTimeout(function(){
       overlayPage()
-    }, 2500)
+    }, 5000)
     return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`);
   }
   questionsCount++;
