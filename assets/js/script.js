@@ -3,7 +3,7 @@ let openHiddenTextBtn = document.querySelector(".btn-for-overlay-page");
 let showHiddenText = document.querySelector("#hidden-popup-text");
 let closeHiddenTextBtn = document.querySelector(".fa-xmark");
 // variables for welcome users
-let welcomeUserText = document.querySelector('.welcome-user')
+let requirdUserText = document.querySelector('.requird-text')
 
 // variable for Username
 let enterUser = document.querySelector("#enter-user");
@@ -33,10 +33,10 @@ let saveUser = document.querySelector("#save-user");
    */
   function addUserName() {
     if(enterUser.value === ''){
-      welcomeUserText.innerHTML = 'username requird please!'
+      requirdUserText.innerHTML = 'username requird please!'
     }else{
-      welcomeUserText.innerHTML = `Thanx! for signing in, ${enterUser.value}👋`
-      welcomeUserText.style.color = 'rgb(40, 221, 40)'
+      requirdUserText.innerHTML = `Thanx! for signing in, ${enterUser.value}👋`
+      requirdUserText.style.color = 'rgb(40, 221, 40)'
       setTimeout(function(){
         window.location.assign('quiz.html')
       }, 1200)
