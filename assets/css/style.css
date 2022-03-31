@@ -143,7 +143,7 @@ li {
   color: rgb(0, 0, 0);
 }
 
-/* introduction page */
+/* introduction page / index.html  */
 #quiz-introduction-hero {
   background: linear-gradient(rgb(24, 49, 83), rgb(137, 43, 226));
   color: rgb(255, 255, 255);
@@ -284,29 +284,30 @@ input[type="submit"] {
     font-size: 120%;
   }
 
-  /* introduction page */
+  /* introduction page / index.html  */
   #quiz-introduction-hero {
     width: 80%;
-    margin: 150px auto 0 auto;
-    height: 300px;
+    margin: 120px auto 0 auto;
+    height: 400px;
   }
   #quiz-introduction-hero > h1 {
-    font-size: 110%;
-    padding: 20px;
-    margin-top: 40px;
+    font-size: 105%;
+    padding-top: 40px;
   }
   #quiz-introduction-hero .footbal-fun-icon {
-    height: 1.1rem;
+    height: 0.8rem;
   }
   .quiz-introduction-content > p,
   input,
   .quiz-introduction-content > a > .start-quiz-class {
-    margin: 20px;
+    margin: 25px;
     padding: 8px;
   }
   .quiz-introduction-content > p,
   .quiz-introduction-content > a > .start-quiz-class {
     margin: 20px auto 0 auto;
+    width: 60%;
+    font-size: 80%;
   }
   input {
     display: block;
@@ -316,13 +317,13 @@ input[type="submit"] {
   }
   input[type="submit"] {
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   /* hidden text */
   #hidden-popup-text {
-    top: -60px;
-    border-radius: 30px;
+    top: -30px;
+    border-radius: 20px;
   }
   .close-quiz-info {
     margin: 15px;
@@ -390,29 +391,30 @@ input[type="submit"] {
     font-size: 150%;
   }
 
-  /* introduction page */
+  /* introduction page / index.html  */
   #quiz-introduction-hero {
-    width: 80%;
-    margin: 150px auto 0 auto;
-    height: 300px;
+    width: 70%;
+    margin: 180px auto 0 auto;
+    height: 400px;
   }
   #quiz-introduction-hero > h1 {
     font-size: 120%;
-    padding: 20px;
-    margin-top: 40px;
+    padding-top: 40px;
   }
   #quiz-introduction-hero .footbal-fun-icon {
-    height: 1.1rem;
+    height: 1rem;
   }
   .quiz-introduction-content > p,
   input,
   .quiz-introduction-content > a > .start-quiz-class {
-    margin: 20px;
+    margin: 25px;
     padding: 8px;
   }
   .quiz-introduction-content > p,
   .quiz-introduction-content > a > .start-quiz-class {
     margin: 20px auto 0 auto;
+    width: 50%;
+    font-size: 110%;
   }
   input {
     display: block;
@@ -422,26 +424,27 @@ input[type="submit"] {
   }
   input[type="submit"] {
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   /* hidden text */
   #hidden-popup-text {
-    top: -60px;
-    border-radius: 30px;
+    top: 0;
+    border-radius: 20px;
+    height: 440px;
   }
   .close-quiz-info {
     margin: 15px;
   }
   .close-quiz-info > .fa-xmark {
-    font-size: 100%;
+    font-size: 120%;
   }
   #hidden-popup-text > h2 {
     margin: 15px;
-    font-size: 120%;
+    font-size: 125%;
   }
   #hidden-popup-text > p {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
 
@@ -467,12 +470,10 @@ input[type="submit"] {
     font-size: 140%;
   }
   .section-header-content > h2 > .questions-tracks {
-    margin-right: 130px;
-    padding: 5px;
+    margin-right: 100px;
   }
   .section-header-content > h2 > .points-tracks {
-    margin-left: 130px;
-    padding: 5px;
+    margin-left: 100px;
   }
 
   /* questins and answers section */
@@ -494,29 +495,30 @@ input[type="submit"] {
     font-size: 160%;
   }
 
-  /* introduction page */
+  /* introduction page / index.html  */
   #quiz-introduction-hero {
-    width: 80%;
-    margin: 150px auto 0 auto;
-    height: 300px;
+    width: 70%;
+    margin: 160px auto 0 auto;
+    height: 400px;
   }
   #quiz-introduction-hero > h1 {
-    font-size: 110%;
-    padding: 20px;
-    margin-top: 40px;
+    font-size: 160%;
+    padding-top: 40px;
   }
   #quiz-introduction-hero .footbal-fun-icon {
-    height: 1.1rem;
+    height: 1.2rem;
   }
   .quiz-introduction-content > p,
   input,
   .quiz-introduction-content > a > .start-quiz-class {
-    margin: 20px;
+    margin: 25px;
     padding: 8px;
   }
   .quiz-introduction-content > p,
   .quiz-introduction-content > a > .start-quiz-class {
     margin: 20px auto 0 auto;
+    width: 50%;
+    font-size: 130%;
   }
   input {
     display: block;
@@ -526,25 +528,26 @@ input[type="submit"] {
   }
   input[type="submit"] {
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   /* hidden text */
   #hidden-popup-text {
-    top: -60px;
-    border-radius: 30px;
+    top: 0;
+    border-radius: 20px;
   }
   .close-quiz-info {
     margin: 15px;
   }
   .close-quiz-info > .fa-xmark {
-    font-size: 100%;
+    font-size: 130%;
+    margin-right: 10px;
   }
   #hidden-popup-text > h2 {
     margin: 15px;
-    font-size: 120%;
+    font-size: 135%;
   }
   #hidden-popup-text > p {
-    font-size: 90%;
+    font-size: 120%;
   }
 }
