@@ -176,10 +176,10 @@ function footballGameData() {
     /**
      * this fucntion delays time out after user see their result text
      */
-    setTimeout(function () {
-      overlayPage();
-    }, 5000);
-    return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`);
+      setTimeout(function(){
+        overlayPage();
+      }, 5000)
+    return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
   }
 
   questionsCount++;
@@ -269,6 +269,5 @@ function overlayPage() {
     displayUsersReviewText.style.display = "block";
   }
 }
-displayUsersReviewText.addEventListener("click", overlayPage);
 
 startQuiz();
