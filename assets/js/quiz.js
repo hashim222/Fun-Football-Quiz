@@ -110,57 +110,39 @@
     correctAns: 1,
   },
 ];
-/**
- * Question number increase variable
- */
-let increaseQuestionsNum = document.querySelector("#increase-questions");
-/**
- * Question points increase variable
- */
-let increaseQuizScore = document.querySelector("#increase-points");
-/**
- * varibale for Quiz Questions
- */
-let quizQuestionValue = document.querySelector(".quiz-questions");
-/**
- * Answers variable
- */
-let multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 
-/**
- * after the user has answerd all the questions it will give them options of restart and home button
- */
-let quizResult = document.querySelector(".quiz-result");
-/**
- * display result
- */
-let displayResult = document.querySelector('.review-users')
+// Question number increase variable
+const increaseQuestionsNum = document.querySelector("#increase-questions");
 
-let showResult = document.querySelector('#show-result')
-/**
- * hide result
- */
- let hideResult = document.querySelector('.fa-xmark')
+// Question points increase variable
+const increaseQuizScore = document.querySelector("#increase-points");
 
-/**
- * Empty object brackets
- */
+// varibale for Quiz Questions
+const quizQuestionElem = document.querySelector(".quiz-questions");
+
+// Answers variable
+const multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
+
+// after the user has answerd all the questions it will give them options of restart and home button
+const quizResult = document.querySelector(".quiz-result");
+
+// display result
+const displayUsersReviewText = document.querySelector(".review-users");
+const showResult = document.querySelector("#show-result");
+
+// Empty object brackets
 let currentQuestion = {};
-/**
- * keep a track of question user has answerd
- */
+
+// keep a track of question user has answerd
 let questionsCount;
-/**
- * "points" is created to increases users points
- */
+
+//"points" is created to increases users points
 let points;
-/**
- * "calculateTotalCorrectAnswers" is created to caluclate total correct result of user
- */
+
+// "calculateTotalCorrectAnswers" is created to caluclate total correct result of user
 let calculateTotalCorrectAnswers;
-/**
- * Duplicate of array object "myQuestions"
- */
+
+// Duplicate of array object "myQuestions"
 let duplicateMyQuestions = [];
 
 /**
@@ -173,75 +155,68 @@ function startQuiz() {
   calculateTotalCorrectAnswers = 0;
   footballGameData();
 }
+
+/**
+ *  This function will be activated once the user has answered all the questions
+ */
 function footballGameData() {
   let TOTAL_ANSWERS = 10;
-  /**
-   * After the last question answered, this statement will ask users to either try again or or take them into the home page
-   */
-  if (
-    duplicateMyQuestions.length === 0) {
+  if (duplicateMyQuestions.length === 0) {
     if (calculateTotalCorrectAnswers >= 8) {
-      showResult.innerHTML = "You know what football is all about, sir 😎"
-      overlayPage()
+      showResult.innerHTML = "You know what football is all about, sir 😎";
+      overlayPage();
     } else if (calculateTotalCorrectAnswers >= 5) {
-      showResult.innerHTML = "you should try again!🤔"
-      overlayPage()
+      showResult.innerHTML = "you should try again!🤔";
+      overlayPage();
     } else {
-      showResult.innerHTML = "better luck next time!😩"
-      overlayPage()
+      showResult.innerHTML = "better luck next time!😩";
+      overlayPage();
     }
-    setTimeout(function(){
-      overlayPage()
-    }, 5000)
+
+    /**
+     * this fucntion delays time out after user see their result text
+     */
+    setTimeout(function () {
+      overlayPage();
+    }, 5000);
     return (quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button onclick="window.location.assign('index.html')">Home</button> <button onclick="location.reload()">Restart</button>`);
   }
+
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
   let generatesIndex = generatesRandomQuiz();
   currentQuestion = duplicateMyQuestions[generatesIndex];
-  quizQuestionValue.innerHTML = currentQuestion.question;
-  /**
-   * multiple btns stored inside 'btns'
-   */
-  multipleBtnsInQuiz.forEach(function (btns) {    
-    /**
-     * variable for "data-value" attribute from inside the html
-     */
+  quizQuestionElem.innerHTML = currentQuestion.question;
+
+  // multiple btns stored inside 'btns'
+  multipleBtnsInQuiz.forEach(function (btns) {
     let btnsValue = btns.getAttribute("data-value");
     btns.innerHTML = currentQuestion.answers["optn" + btnsValue];
   });
-  /**
-   * This will prevent repeating the previous questions
-   */
+
+  // This will prevent repeating the previous questions
   duplicateMyQuestions.splice(generatesIndex, 1);
 }
 
 multipleBtnsInQuiz.forEach((btns) => {
   btns.addEventListener("click", function (e) {
-    /**
-     * Gets current value from innerhtml when clicked
-     */
+
+    // Gets current value from innerhtml when clicked
     let usersSelects = e.currentTarget;
-    /**
-     * gets the value from the inside of "data-value" attribute
-     */
+
+    // gets the value from the inside of "data-value" attribute
     let usersSelectedValue = usersSelects.getAttribute("data-value");
-    /**
-     * compares users selected value and correct answer
-     */
+
+    // compares users selected value and correct answer
     let checkIfTrue =
       parseInt(usersSelectedValue) === currentQuestion.correctAns
         ? "correct-answer"
         : "incorrect-answer";
-    /**
-     * this statments checks the value if the answer is correct increase points
-     */
+
     if (checkIfTrue === "correct-answer") {
       increaseUsersPoints(points);
     }
-    /**
-     * this statments checks the value if the answer is correct increase questions
-     */
+
     if (checkIfTrue === "correct-answer") {
       increaseQuestionsResultInTotal();
     }
@@ -256,6 +231,7 @@ multipleBtnsInQuiz.forEach((btns) => {
     }, 800);
   });
 });
+
 /**
  * this function will increases users points if their answer is correct
  */
@@ -265,6 +241,7 @@ function increaseUsersPoints() {
   increaseQuizScore.innerHTML = points;
   return increasePoints;
 }
+
 /**
  *  this function will increases users correct questions if their answer is correct
  */
@@ -281,17 +258,17 @@ function generatesRandomQuiz() {
   let randomGenerates = Math.floor(Math.random() * duplicateMyQuestions.length);
   return randomGenerates;
 }
+
 /**
  * This fucntion is for popup page for Quiz result
  */
- function overlayPage() {
-  if (displayResult.style.display === "block") {
-    displayResult.style.display = "none";
+function overlayPage() {
+  if (displayUsersReviewText.style.display === "block") {
+    displayUsersReviewText.style.display = "none";
   } else {
-    displayResult.style.display = "block";
+    displayUsersReviewText.style.display = "block";
   }
 }
-// This will Close popup page for Quiz result
-hideResult.addEventListener("click", overlayPage);
+displayUsersReviewText.addEventListener("click", overlayPage);
 
 startQuiz();

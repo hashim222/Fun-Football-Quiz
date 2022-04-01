@@ -90,26 +90,11 @@ li {
 /* hidden quiz result page for users */
 .review-users {
   font-style: italic;
-  margin-bottom: 10px;
   background-color: rgb(24, 49, 83);
   display: none;
 }
 .review-users > h2 {
-  padding-bottom: 30px;
-  margin-bottom: 20px;
-}
-.review-users > p {
-  text-align: right;
-  padding-right: 20px;
-}
-.review-users > p > .fa-xmark {
-  cursor: pointer;
-  padding: 10px;
-  transition: 800ms;
-  font-size: 150%;
-}
-.review-users > p > .fa-xmark:hover {
-  transform: rotate(180deg);
+  padding: 30px;
 }
 
 /* footer */
@@ -262,23 +247,20 @@ input[type="submit"] {
   .review-users > h2 {
     font-size: 90%;
   }
-  .review-users > p {
-    padding-right: 15px;
-  }
-  .review-users > p > .fa-xmark {
-    font-size: 130%;
-  }
   .quiz-result > h1 {
     font-size: 100%;
     padding: 10px;
+    margin-bottom: 10px;
   }
   .quiz-result > p {
     font-size: 110%;
+    margin-bottom: 20px;
   }
   .quiz-result button {
     margin: 20px;
     font-size: 120%;
     padding: 10px;
+    cursor: pointer;
   }
 
   /* footer */
@@ -386,17 +368,14 @@ input[type="submit"] {
 
   /* hidden quiz result page for users */
   .review-users > h2 {
-    font-size: 110%;
-  }
-  .review-users > p {
-    padding-right: 25px;
-  }
-  .review-users > p > .fa-xmark {
-    font-size: 140%;
+    font-size: 130%;
+    margin-top: 30px;
+    padding: 45px;
   }
 
   .quiz-result > h1 {
     font-size: 130%;
+    margin: 20px;
   }
   .quiz-result > p {
     font-size: 130%;
@@ -505,23 +484,20 @@ input[type="submit"] {
   /* hidden quiz result page for users */
   .review-users > h2 {
     font-size: 140%;
+    padding: 50px;
   }
-  .review-users > p {
-    padding-right: 30px;
-  }
-  .review-users > p > .fa-xmark {
-    font-size: 150%;
-  }
-
   .quiz-result > h1 {
     font-size: 150%;
+    margin-top: 20px;
   }
   .quiz-result > p {
     font-size: 140%;
+    margin-top: 50px;
   }
   .quiz-result button {
     font-size: 140%;
     padding: 20px;
+    margin-top: 40px;
   }
 
   /* footer */
