@@ -3,9 +3,13 @@
 ## Introduction
 
 Fun Football Quiz is designed to test the knowledge of hard-core football fans who wants to test their knowledge.  
-The website of Fun Football Quiz provides all the information users need about this quiz like: quiz info, start quiz and user's username.
+Fun Football Quiz's website offers all the information users need about this quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and the questions themselves, etc.
 
 Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football-Quiz/)
+
+![this is an image-1 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-quiz-info-page.png)
+![this is an image-2 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-main-page.png)
+
 
 ## For UX
 * In the body, I used an image of a football theme that matches well with the foreground color I chose, which is a mixture of these colors (#183153, #892be2) and you can find all the colors I used on the website below in the reference section👇. 
@@ -35,6 +39,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### Quiz Questions And Answers Page
 
 ## Wireframe
+*  You can find websites wireframe inside the [wireframe.md](wireframe.md). 
 ## Testings
 ## Technologies Used
 * These are the technologies that were used to make this project.
