@@ -39,6 +39,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### Quiz Questions And Answers Page
 
 ## Wireframe
+* For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/)
 *  You can find websites wireframe inside the [wireframe.md](wireframe.md)
 ## Testings
 
@@ -62,10 +63,14 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
   * [Google font](https://fonts.google.com/)
   
   * [W3School](https://www.w3schools.com/)
+
+  * [MDN Web Docs](https://developer.mozilla.org/en-US/)
   
   * [AM I RESPONSIVE](http://ami.responsivedesign.is/)
   
-  * [MDN Web Docs](https://developer.mozilla.org/en-US/)
+  * [Wireframe.cc](https://wireframe.cc/)
+
+  * [Stackoverflow](https://stackoverflow.com/)
 
   * [git](https://git-scm.com/)
 
@@ -101,5 +106,23 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
     ![this is an image for how cloning by links](/assets/images/Readme-Images/cloning-links.png)
              
 ## Credits
+  I did not find HTML and CSS too challenging since I had some experience with them and received some assistance from Slack, tutor support and W3school. However, Javascript was quite challenging even though I was familiar with the basics of js before I joined the course. Still, I needed help from outside sources, such as YouTube and Udemy.
+* ### JS Code
+  * The quiz information overlay page was created with a bit of help from W3school.
+  * Quiz questions and answers help was taken from [(Udemy) Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
+  * End bit of question and answer page after user has answer all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA)
+
+* ### Content
+  * By making this project I had plenty of help from the [Slack Community](https://slack.com/intl/en-gb/).
+
+   * To make a color reference table in the readme, I used [readme.so](https://readme.so/editor)
+
+   * I often look for help on the [StackOverflow community](https://stackoverflow.com/) when I get stuck as well
 
 
+
+
+* ### Media
+  * favicon logo was taken from [Google](https://www.google.com/search?q=football+icon&tbm=isch&chips=q:football+icon,g_1:red:DzEFUJmS5D0%3D&rlz=1C1CHBF_en-GBGB959GB959&hl=en&sa=X&ved=2ahUKEwjDz5LR2vX2AhV38LsIHZNoDN0Q4lYoB3oECAEQKg&biw=1519&bih=714#imgrc=V0k4UncPwJvZjM)
+
+  * The websites background image was taken from [wallpapersafari](https://wallpapersafari.com/w/qJsVwy)
