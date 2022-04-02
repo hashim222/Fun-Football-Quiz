@@ -12,7 +12,7 @@ body {
   background-position: center;
   text-decoration: none;
   font-family: "Amiko", sans-serif;
-}
+  }
 a {
   text-decoration: none;
 }
@@ -87,7 +87,7 @@ li {
   background-color: rgb(24, 49, 83);
   display: none;
 }
-.review-users > h2 {
+.review-users > p {
   padding: 30px;
 }
 
@@ -213,7 +213,7 @@ input[type="submit"] {
   /* main content of the quiz */
   #section-hero {
     width: 80%;
-    height: 600px;
+    height: 620px;
     margin-bottom: 150px;
   }
   .section-header-content > h2 {
@@ -235,7 +235,7 @@ input[type="submit"] {
   }
 
   /* hidden quiz result page for users */
-  .review-users > h2 {
+  .review-users > p {
     font-size: 90%;
   }
   .quiz-result > h1 {
@@ -355,7 +355,7 @@ input[type="submit"] {
   } 
 
   /* hidden quiz result page for users */
-  .review-users > h2 {
+  .review-users > p {
     font-size: 130%;
     margin-top: 30px;
     padding: 45px;
@@ -468,7 +468,7 @@ input[type="submit"] {
   }
 
   /* hidden quiz result page for users */
-  .review-users > h2 {
+  .review-users > p {
     font-size: 140%;
     padding: 50px;
   }

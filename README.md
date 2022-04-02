@@ -39,8 +39,11 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### Quiz Questions And Answers Page
 
 ## Wireframe
-*  You can find websites wireframe inside the [wireframe.md](wireframe.md). 
+*  You can find websites wireframe inside the [wireframe.md](wireframe.md)
 ## Testings
+
+*  You can find out what testing has been done for the site, and what bugs were found by visiting [testing.md](testing.md)
+
 ## Technologies Used
 * These are the technologies that were used to make this project.
 

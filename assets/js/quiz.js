@@ -163,7 +163,7 @@ function footballGameData() {
   let TOTAL_ANSWERS = 10;
   if (duplicateMyQuestions.length === 0) {
     if (calculateTotalCorrectAnswers >= 8) {
-      showResult.innerHTML = "You know what football is all about, sir 😎";
+      showResult.innerHTML = "Well done! You're a real football fan😎";
       overlayPage();
     } else if (calculateTotalCorrectAnswers >= 5) {
       showResult.innerHTML = "you should try again!🤔";
@@ -179,8 +179,9 @@ function footballGameData() {
       setTimeout(function(){
         overlayPage();
       }, 5000)
-    return quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
-  }
+     quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
+     return undefined
+    }
 
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
@@ -209,8 +210,8 @@ multipleBtnsInQuiz.forEach((btns) => {
 
     // compares users selected value and correct answer
     let checkIfTrue =
-      parseInt(usersSelectedValue) === currentQuestion.correctAns
-        ? "correct-answer"
+      parseInt(usersSelectedValue) === currentQuestion.correctAns ?
+         "correct-answer"
         : "incorrect-answer";
 
     if (checkIfTrue === "correct-answer") {
