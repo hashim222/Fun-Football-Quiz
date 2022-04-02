@@ -2,6 +2,7 @@
 let openHiddenTextBtn = document.querySelector(".btn-for-overlay-page");
 let showHiddenText = document.querySelector("#hidden-popup-text");
 let closeHiddenTextBtn = document.querySelector(".fa-xmark");
+
 // variables for welcome users
 let requirdUserText = document.querySelector('.requird-text')
 
@@ -14,6 +15,7 @@ let saveUser = document.querySelector("#save-user");
         addUserName()
       }
     })
+    
 /**
  * This fucntion is for popup page for Quiz information
  */

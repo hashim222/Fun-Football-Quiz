@@ -163,7 +163,7 @@ function footballGameData() {
   let TOTAL_ANSWERS = 10;
   if (duplicateMyQuestions.length === 0) {
     if (calculateTotalCorrectAnswers >= 8) {
-      showResult.innerHTML = "Well done! You're a real football fan😎";
+      showResult.innerHTML = "Well done! You're a real football fan 😎";
       overlayPage();
     } else if (calculateTotalCorrectAnswers >= 5) {
       showResult.innerHTML = "you should try again!🤔";
@@ -223,9 +223,7 @@ multipleBtnsInQuiz.forEach((btns) => {
     }
 
     usersSelects.classList.add(checkIfTrue);
-    /**
-     * setTimeout fucntion was added to slow down speed for next question
-     */
+    
     setTimeout(function () {
       usersSelects.classList.remove(checkIfTrue);
       footballGameData();
