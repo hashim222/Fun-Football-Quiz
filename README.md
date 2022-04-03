@@ -7,14 +7,14 @@ Fun Football Quiz's website offers all the information users need about this qui
 
 Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football-Quiz/)
 
-![this is an image-1 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-quiz-info-page.png)
-![this is an image-2 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-main-page.png)
+  ![this is an image-1 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-quiz-info-page.png)
+  ![this is an image-2 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-main-page.png)
 
 
 ## For UX
 * In the body, I used an image of a football theme that matches well with the foreground color I chose, which is a mixture of these colors (#183153, #892be2) and you can find all the colors I used on the website below in the reference section👇. 
 
-### Color Reference:
+  ### Color Reference:
 
 | RGB             | HEX                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -34,9 +34,37 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
    * On the quiz introduction page, users can see how the quiz works, how to start the quiz and enter their usernames.
    * quiz questions and answers page contains all the quiz questions and answers.     
 
-* ### Quiz Introduction Page
+## Quiz Introduction Page
+* ### Quiz Info
+  ![this is an image for quiz info button](assets/images/Readme-Images/quiz-info-btn.png)
+  
+  * The Quiz Info button tells the user what information they need to know about the quiz. 
 
-* ### Quiz Questions And Answers Page
+  * The overlay page will appear when the user clicks on Quiz Info button.
+
+  ![this is an image for quiz instruction page](assets/images/Readme-Images/quiz-info-page.png)
+  * The user will see this instruction page once they clicks on Quiz Info button.
+  * This page shows all the details users needs about the quiz and what they can expect.
+  * Users can close the page after reading the instructions by clicking the x icon in the top right corner.
+
+* ### Start Quiz
+  ![this is an image for start quiz btn](assets/images/Readme-Images/start-quiz-btn.png)
+
+  * When users clicks on the Start Quiz button, they will be taken to the quiz question and answer page.
+
+* ### Username
+  ![this image for telling user to enter their name btn](assets/images/Readme-Images/enter-username.png)
+  * Users can enter their username in the username field, but it's optional.
+  * If users wish to begin the quiz without providing their username, they can click on the Start Quiz button and find themselves on the quiz question and answer page.        
+
+      ![this image for telling user to enter their name btn](assets/images/Readme-Images/required-user.png)
+
+  * Users will see the text "Username required, please!" if they click the submit button without adding any text.
+
+     ![this image for telling user to enter their name btn](assets/images/Readme-Images/user-has-enter-their-name.png)
+
+  * Users who enter their username will receive a "thank you! for signing in" message and soon they will be taken to a quiz question and answer page.
+ ## Quiz Questions And Answers Page
 
 ## Wireframe
 * For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/)
