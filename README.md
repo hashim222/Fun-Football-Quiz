@@ -3,7 +3,7 @@
 ## Introduction
 
 Fun Football Quiz is designed to test the knowledge of hard-core football fans who wants to test their knowledge.  
-Fun Football Quiz's website offers all the information users need about this quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and the questions themselves, etc.
+Fun Football Quiz's website offers all the information users need about the quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and the questions themselves, etc.
 
 Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football-Quiz/)
 
@@ -32,14 +32,16 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 # Features
 * ### This Quiz Is Built Using Two Separate HTML Files 
    * On the quiz introduction page, users can see how the quiz works, how to start the quiz and enter their usernames.
-   * quiz questions and answers page contains all the quiz questions and answers.     
+
+   * Main quiz page contains all the quiz questions and answers.     
 
 ## Quiz Introduction Page
+![this is an image for quiz introduction page](assets/images/Readme-Images/quiz-introduction-page.png)
+
 * ### Quiz Info
   ![this is an image for quiz info button](assets/images/Readme-Images/quiz-info-btn.png)
   
-  * The Quiz Info button tells the user what information they need to know about the quiz. 
-
+  * The Quiz Info button tells the user what information they need to know about the quiz.
   * The overlay page will appear when the user clicks on Quiz Info button.
 
   ![this is an image for quiz instruction page](assets/images/Readme-Images/quiz-info-page.png)
@@ -50,28 +52,37 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### Start Quiz
   ![this is an image for start quiz btn](assets/images/Readme-Images/start-quiz-btn.png)
 
-  * When users clicks on the Start Quiz button, they will be taken to the quiz question and answer page.
+  * When users clicks on the Start Quiz button, they will be taken to the main quiz page.
 
 * ### Username
-  ![this image for telling user to enter their name btn](assets/images/Readme-Images/enter-username.png)
+  ![this image for username button](assets/images/Readme-Images/enter-username.png)
   * Users can enter their username in the username field, but it's optional.
-  * If users wish to begin the quiz without providing their username, they can click on the Start Quiz button and find themselves on the quiz question and answer page.        
+  * If users wish to begin the quiz without providing their username, they can click on the Start Quiz button and find themselves on the main quiz page.        
 
-      ![this image for telling user to enter their name btn](assets/images/Readme-Images/required-user.png)
+     ![this image is for required text](assets/images/Readme-Images/required-user.png)
 
   * Users will see the text "Username required, please!" if they click the submit button without adding any text.
 
-     ![this image for telling user to enter their name btn](assets/images/Readme-Images/user-has-enter-their-name.png)
+     ![this is an image for thanx for user text](assets/images/Readme-Images/user-has-enter-their-name.png)
 
-  * Users who enter their username will receive a "thank you! for signing in" message and soon they will be taken to a quiz question and answer page.
- ## Quiz Questions And Answers Page
+  * Users who enter their username will receive a "thank you! for signing in" message and soon they will be taken to a main quiz page.
+
+ ## Main Quiz Page
+   ![this is an image for main quiz page](assets/images/Readme-Images/quiz-main-page.png)
+
+ * ### Header
+    ![image for main page header](assets/images/Readme-Images/website-header.png)
+
+    * The header is the site's logo, which appears at the top of the page.
+    * The quiz questions can be refreshed by either refreshing the page or clicking the header.
+    * The header serves as the quiz's home page as well.
 
 ## Wireframe
-* For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/)
-*  You can find websites wireframe inside the [wireframe.md](wireframe.md)
+* For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/).
+* You can find websites wireframe inside the [wireframe.md](wireframe.md).
 ## Testings
 
-*  You can find out what testing has been done for the site, and what bugs were found by visiting [testing.md](testing.md)
+*  You can find out what testing has been done for the site, and what bugs were found by visiting [testing.md](testing.md).
 
 ## Technologies Used
 * These are the technologies that were used to make this project.
@@ -137,20 +148,23 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
   I did not find HTML and CSS too challenging since I had some experience with them and received some assistance from Slack, tutor support and W3school. However, Javascript was quite challenging even though I was familiar with the basics of js before I joined the course. Still, I needed help from outside sources, such as YouTube and Udemy.
 * ### JS Code
   * The quiz information overlay page was created with a bit of help from W3school.
-  * Quiz questions and answers help was taken from [(Udemy) Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
-  * End bit of question and answer page after user has answer all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA)
+  * Quiz questions and answers help was taken from [(Udemy) Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/).
+  * End bit of question and answer page after user has answer all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA).
 
 * ### Content
   * By making this project I had plenty of help from the [Slack Community](https://slack.com/intl/en-gb/).
 
-   * To make a color reference table in the readme, I used [readme.so](https://readme.so/editor)
+   * To make a color reference table in the readme, I used [readme.so](https://readme.so/editor).
 
    * I often look for help on the [StackOverflow community](https://stackoverflow.com/) when I get stuck as well
 
+   *  When a user refreshes the page, the username input field stays focused. This was taken from [LOVE MATHS](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode)
+
+   * The quiz questions and answers were taken from [GOAL](https://www.goal.com/en-us).
 
 
 
 * ### Media
-  * favicon logo was taken from [Google](https://www.google.com/search?q=football+icon&tbm=isch&chips=q:football+icon,g_1:red:DzEFUJmS5D0%3D&rlz=1C1CHBF_en-GBGB959GB959&hl=en&sa=X&ved=2ahUKEwjDz5LR2vX2AhV38LsIHZNoDN0Q4lYoB3oECAEQKg&biw=1519&bih=714#imgrc=V0k4UncPwJvZjM)
+  * favicon logo was taken from [Google](https://www.google.com/search?q=football+icon&tbm=isch&chips=q:football+icon,g_1:red:DzEFUJmS5D0%3D&rlz=1C1CHBF_en-GBGB959GB959&hl=en&sa=X&ved=2ahUKEwjDz5LR2vX2AhV38LsIHZNoDN0Q4lYoB3oECAEQKg&biw=1519&bih=714#imgrc=V0k4UncPwJvZjM).
 
-  * The websites background image was taken from [wallpapersafari](https://wallpapersafari.com/w/qJsVwy)
+  * The websites background image was taken from [wallpapersafari](https://wallpapersafari.com/w/qJsVwy).
