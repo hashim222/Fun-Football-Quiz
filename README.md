@@ -3,12 +3,12 @@
 ## Introduction
 
 Fun Football Quiz is designed to test the knowledge of hard-core football fans who wants to test their knowledge.  
-Fun Football Quiz's website offers all the information users need about the quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and the questions themselves, etc.
+Fun Football Quiz's website offers all the information users need about the quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and users points, etc.
 
 Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football-Quiz/)
 
-  ![this is an image-1 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-quiz-info-page.png)
-  ![this is an image-2 for my project. how it fits different screen sizes](assets/images/Readme-Images/responsive-main-page.png)
+  ![image for quiz introduction page and how it fits different screen sizes](assets/images/Readme-Images/responsive-quiz-info-page.png)
+  ![image for main quiz page and how it fits different screen sizes](assets/images/Readme-Images/responsive-main-page.png)
 
 
 ## For UX
@@ -36,46 +36,73 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
    * Main quiz page contains all the quiz questions and answers.     
 
 ## Quiz Introduction Page
-![this is an image for quiz introduction page](assets/images/Readme-Images/quiz-introduction-page.png)
+![image for quiz introduction page](assets/images/Readme-Images/quiz-introduction-page.png)
 
 * ### Quiz Info
-  ![this is an image for quiz info button](assets/images/Readme-Images/quiz-info-btn.png)
+  ![image for quiz info button](assets/images/Readme-Images/quiz-info-btn.png)
   
   * The Quiz Info button tells the user what information they need to know about the quiz.
   * The overlay page will appear when the user clicks on Quiz Info button.
 
-  ![this is an image for quiz instruction page](assets/images/Readme-Images/quiz-info-page.png)
+    ![image for quiz instruction page](assets/images/Readme-Images/quiz-info-page.png)
   * The user will see this instruction page once they clicks on Quiz Info button.
   * This page shows all the details users needs about the quiz and what they can expect.
   * Users can close the page after reading the instructions by clicking the x icon in the top right corner.
 
 * ### Start Quiz
-  ![this is an image for start quiz btn](assets/images/Readme-Images/start-quiz-btn.png)
+  ![image for start quiz btn](assets/images/Readme-Images/start-quiz-btn.png)
 
   * When users clicks on the Start Quiz button, they will be taken to the main quiz page.
 
 * ### Username
-  ![this image for username button](assets/images/Readme-Images/enter-username.png)
+  ![image for username button](assets/images/Readme-Images/enter-username.png)
   * Users can enter their username in the username field, but it's optional.
   * If users wish to begin the quiz without providing their username, they can click on the Start Quiz button and find themselves on the main quiz page.        
 
-     ![this image is for required text](assets/images/Readme-Images/required-user.png)
+     ![image is for required text](assets/images/Readme-Images/required-user.png)
 
   * Users will see the text "Username required, please!" if they click the submit button without adding any text.
 
-     ![this is an image for thanx for user text](assets/images/Readme-Images/user-has-enter-their-name.png)
+     ![image for thanx for user text](assets/images/Readme-Images/user-has-enter-their-name.png)
 
   * Users who enter their username will receive a "thank you! for signing in" message and soon they will be taken to a main quiz page.
 
  ## Main Quiz Page
-   ![this is an image for main quiz page](assets/images/Readme-Images/quiz-main-page.png)
+   ![image for main quiz page](assets/images/Readme-Images/quiz-main-page.png)
 
  * ### Header
     ![image for main page header](assets/images/Readme-Images/website-header.png)
 
     * The header is the site's logo, which appears at the top of the page.
     * The quiz questions can be refreshed by either refreshing the page or clicking the header.
-    * The header serves as the quiz's home page as well.
+    * By pressing the header in the middle of a quiz, the user will be taken back to the beginning of the quiz.
+
+ * ### Quiz Questions Count
+
+   * For the user to keep track of the quiz questions, a question count was created.
+   * As the user answers a question, the number of questions will increase.
+
+ * ### Quiz Points
+
+   * Quiz points were created to reward users with points if they answered correctly.
+   * Each time the user answers correctly, the number of points increases to 100.
+
+ * ### Questions And Answers
+   * In total, there are ten questions in the quiz
+   * As there are four options for each question, clicking on one will take the user to the next question.
+   * The background color will turn green if the user answers correctly, and red if the user answers incorrectly.
+   * After answering all the questions, the user will be taken to the results page.
+
+* ### Users Result Page
+
+  * On the result page, the user can see how many questions they answered correctly and what kind of review they will receive.
+  * If the correct answers are less than 5, the user will receive a review of "better luck next time!".
+  * If the correct answers are greater than 5 and less than 8, the user will receive a review of "you should try again!".
+  * If the correct answers are 8 or greater, the user will receive a review of "Well done! You're a real football fan".
+
+* ### Home Button And Restart Button
+  * By clicking the home button, the user will be taken to the quiz introduction page 
+  * The user can restart the quiz by clicking the restart button.
 
 ## Wireframe
 * For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/).

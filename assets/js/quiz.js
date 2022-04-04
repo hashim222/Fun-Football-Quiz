@@ -130,8 +130,9 @@ const quizResult = document.querySelector(".quiz-result");
 const displayUsersReviewText = document.querySelector(".review-users");
 const showResult = document.querySelector("#show-result");
 
-// Empty object brackets
 let currentQuestion = {};
+
+let acceptAnswers = false
 
 // keep a track of question user has answerd
 let questionsCount;
@@ -197,11 +198,15 @@ function footballGameData() {
 
   // This will prevent repeating the previous questions
   duplicateMyQuestions.splice(generatesIndex, 1);
+
+  acceptAnswers = true
 }
 
 multipleBtnsInQuiz.forEach((btns) => {
   btns.addEventListener("click", function (e) {
+ if(!acceptAnswers) return;
 
+ acceptAnswers = false
     // Gets current value from innerhtml when clicked
     let usersSelects = e.currentTarget;
 

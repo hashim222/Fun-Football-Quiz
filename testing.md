@@ -8,21 +8,21 @@
   
 ### To calculate the site's score, I used Google Chrome developers tools lighthouse.
 
-   * ### [Quiz Info Page For Desktop](assets/images/Readme-Images/desktop-quiz-info.png) 
+   * ### [Quiz Introduction Page For Desktop](assets/images/Readme-Images/desktop-quiz-info.png) 
 
-     ![this is an image of desktop quiz information page](assets/images/Readme-Images/desktop-quiz-info.png)
+     ![image for desktop quiz information page](assets/images/Readme-Images/desktop-quiz-info.png)
 
-   * ### [Quiz Info Page For Androids](assets/images/Readme-Images/mobile-quiz-info.png) 
+   * ### [Quiz Introduction Page For Androids](assets/images/Readme-Images/mobile-quiz-info.png) 
 
-     ![this is an image of android quiz information page](assets/images/Readme-Images/mobile-quiz-info.png)
+     ![image for android quiz information page](assets/images/Readme-Images/mobile-quiz-info.png)
 
    * ### [Main Quiz Page For Desktop](assets/images/Readme-Images/desktop-quiz-main.png) 
 
-     ![this is an image of desktop main quiz page](assets/images/Readme-Images/desktop-quiz-main.png)
+     ![image for desktop main quiz page](assets/images/Readme-Images/desktop-quiz-main.png)
 
    * ### [Main Quiz Page For Androids](assets/images/Readme-Images/mobile-quiz-main.png) 
 
-     ![this is an image of android main quiz page](assets/images/Readme-Images/mobile-quiz-main.png)
+     ![image for android main quiz page](assets/images/Readme-Images/mobile-quiz-main.png)
 
 ## Code Validator Testing
  * HTML 
