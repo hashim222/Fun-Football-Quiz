@@ -77,32 +77,52 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
     * The quiz questions can be refreshed by either refreshing the page or clicking the header.
     * By pressing the header in the middle of a quiz, the user will be taken back to the beginning of the quiz.
 
- * ### Quiz Questions Count
+ * ### Quiz Question Count
+    ![image for quiz question count](assets/images/Readme-Images/quiz-questions-count.png)
 
    * For the user to keep track of the quiz questions, a question count was created.
    * As the user answers a question, the number of questions will increase.
 
  * ### Quiz Points
+     ![image for quiz points](assets/images/Readme-Images/quiz-points.png)
 
    * Quiz points were created to reward users with points if they answered correctly.
    * Each time the user answers correctly, the number of points increases to 100.
 
  * ### Questions And Answers
+    ![image for question and answers](assets/images/Readme-Images/quiz-questions-and-answers.png)
    * In total, there are ten questions in the quiz
    * As there are four options for each question, clicking on one will take the user to the next question.
    * The background color will turn green if the user answers correctly, and red if the user answers incorrectly.
    * After answering all the questions, the user will be taken to the results page.
 
 * ### Users Result Page
+   ![image for users result](assets/images/Readme-Images/users-result-page.png)
 
   * On the result page, the user can see how many questions they answered correctly and what kind of review they will receive.
   * If the correct answers are less than 5, the user will receive a review of "better luck next time!".
+  
+    ![image for better luck next time](assets/images/Readme-Images/better-luck-next-time-users.png)
   * If the correct answers are greater than 5 and less than 8, the user will receive a review of "you should try again!".
+
+    ![image for try again](assets/images/Readme-Images/try-again-users.png)
+
   * If the correct answers are 8 or greater, the user will receive a review of "Well done! You're a real football fan".
+
+    ![image for welldonr users](assets/images/Readme-Images/welldone-users.png)
 
 * ### Home Button And Restart Button
   * By clicking the home button, the user will be taken to the quiz introduction page 
+
+    ![image for home button](assets/images/Readme-Images/home-btn.png)
+
   * The user can restart the quiz by clicking the restart button.
+
+    ![image for restart button](assets/images/Readme-Images/restart-btn.png)
+* ### Footer 
+  * Users can follow Fun Football Quiz on these social media platforms: Facebook, Twitter, Instagram, and Tiktok.  
+
+    ![image for footer follow us on social media ](assets/images/Readme-Images/follow-us.png)
 
 ## Wireframe
 * For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/).
@@ -175,8 +195,8 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
   I did not find HTML and CSS too challenging since I had some experience with them and received some assistance from Slack, tutor support and W3school. However, Javascript was quite challenging even though I was familiar with the basics of js before I joined the course. Still, I needed help from outside sources, such as YouTube and Udemy.
 * ### JS Code
   * The quiz information overlay page was created with a bit of help from W3school.
-  * Quiz questions and answers help was taken from [(Udemy) Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/).
-  * End bit of question and answer page after user has answer all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA).
+  * Quiz was created with the help of [Build a Quiz App with HTML, CSS, and JavaScript (Udemy)](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/).
+  * End bit of main quiz page after user has answerd all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA).
 
 * ### Content
   * By making this project I had plenty of help from the [Slack Community](https://slack.com/intl/en-gb/).
