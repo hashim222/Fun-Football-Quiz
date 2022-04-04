@@ -3,7 +3,7 @@
 ## Introduction
 
 Fun Football Quiz is designed to test the knowledge of hard-core football fans who wants to test their knowledge.  
-Fun Football Quiz's website offers all the information users need about the quiz, such as quiz information, starting the quiz, the user's username, how many questions the user has answered, and users points, etc.
+Fun Football Quiz's website offers all the information users need about the quiz. This includes quiz information, starting the quiz, the user's username, how many questions the user has answered, users score points, etc.
 
 Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football-Quiz/)
 
@@ -12,7 +12,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
 
 ## For UX
-* In the body, I used an image of a football theme that matches well with the foreground color I chose, which is a mixture of these colors (#183153, #892be2) and you can find all the colors I used on the website below in the reference section👇. 
+* For the body, I used an image of a football theme that goes well with the foreground color I have chosen, which is a mixture of these colors (#183153, #892be2) and you can find all the colors I used on the website below in the reference section👇. 
 
   ### Color Reference:
 
@@ -30,8 +30,8 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
   The font family used throughout this site is ["Amiko", sans-serif;](https://fonts.google.com/specimen/Amiko)
 
 # Features
-* ### This Quiz Is Built Using Two Separate HTML Files 
-   * On the quiz introduction page, users can see how the quiz works, how to start the quiz and enter their usernames.
+* ### A Fun Football Quiz consists of two separate HTML files: a quiz introduction page and the main quiz page
+   * The quiz introduction page was created so users can see how the quiz works, how to start the quiz and enter their usernames.
 
    * Main quiz page contains all the quiz questions and answers.     
 
@@ -41,18 +41,19 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### Quiz Info
   ![image for quiz info button](assets/images/Readme-Images/quiz-info-btn.png)
   
-  * The Quiz Info button tells the user what information they need to know about the quiz.
+  * By clicking the Quiz Info button, the user can find out what information they need to know about the quiz.
   * The overlay page will appear when the user clicks on Quiz Info button.
 
     ![image for quiz instruction page](assets/images/Readme-Images/quiz-info-page.png)
-  * The user will see this instruction page once they clicks on Quiz Info button.
-  * This page shows all the details users needs about the quiz and what they can expect.
+
+  * Once the user clicks the Quiz Info button, they will see this instruction overlay page.
+  * Users can find all the necessary details about the quiz on this overlay page.
   * Users can close the page after reading the instructions by clicking the x icon in the top right corner.
 
 * ### Start Quiz
   ![image for start quiz btn](assets/images/Readme-Images/start-quiz-btn.png)
 
-  * When users clicks on the Start Quiz button, they will be taken to the main quiz page.
+  * By clicking on the Start Quiz button, users will be taken to the main quiz page.
 
 * ### Username
   ![image for username button](assets/images/Readme-Images/enter-username.png)
@@ -75,31 +76,31 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
     * The header is the site's logo, which appears at the top of the page.
     * The quiz questions can be refreshed by either refreshing the page or clicking the header.
-    * By pressing the header in the middle of a quiz, the user will be taken back to the beginning of the quiz.
+    * A user can return to the start of a quiz by clicking the header logo in the middle of the quiz.
 
  * ### Quiz Question Count
     ![image for quiz question count](assets/images/Readme-Images/quiz-questions-count.png)
 
-   * For the user to keep track of the quiz questions, a question count was created.
-   * As the user answers a question, the number of questions will increase.
+   * To help users keep track of the quiz questions, a question count was created.
+   * The number of questions will increase as the user answers a question.
 
  * ### Quiz Points
      ![image for quiz points](assets/images/Readme-Images/quiz-points.png)
 
-   * Quiz points were created to reward users with points if they answered correctly.
-   * Each time the user answers correctly, the number of points increases to 100.
+   * Quiz points were created to reward users for answering correctly.
+   * Each time the user answers correctly, the number of points will increases to 100.
 
  * ### Questions And Answers
     ![image for question and answers](assets/images/Readme-Images/quiz-questions-and-answers.png)
-   * In total, there are ten questions in the quiz
-   * As there are four options for each question, clicking on one will take the user to the next question.
+   * The quiz has ten questions in total.
+   * In each question, there are four options, so clicking on one takes the user to the next one.
    * The background color will turn green if the user answers correctly, and red if the user answers incorrectly.
-   * After answering all the questions, the user will be taken to the results page.
+   * After answering all the questions, the user will be taken to the result page.
 
 * ### Users Result Page
    ![image for users result](assets/images/Readme-Images/users-result-page.png)
 
-  * On the result page, the user can see how many questions they answered correctly and what kind of review they will receive.
+  * The user can see how many questions they answered correctly and what kind of review they received on the result page.
   * If the correct answers are less than 5, the user will receive a review of "better luck next time!".
   
     ![image for better luck next time](assets/images/Readme-Images/better-luck-next-time-users.png)
@@ -109,7 +110,9 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
   * If the correct answers are 8 or greater, the user will receive a review of "Well done! You're a real football fan".
 
-    ![image for welldonr users](assets/images/Readme-Images/welldone-users.png)
+    ![image for welldone users](assets/images/Readme-Images/welldone-users.png)
+
+  * The review will disappear shortly after the user receives it.
 
 * ### Home Button And Restart Button
   * By clicking the home button, the user will be taken to the quiz introduction page 
