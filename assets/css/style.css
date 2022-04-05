@@ -81,7 +81,7 @@ li {
   background-color: rgb(255, 45, 45);
 }
 
-/* hidden quiz result page for users */
+/* hidden main quiz result page */
 .review-users {
   font-style: italic;
   background-color: rgb(24, 49, 83);
@@ -108,7 +108,7 @@ li {
   color: rgb(0, 0, 0);
 }
 
-/* introduction page / index.html  */
+/* Quiz introduction page / index.html  */
 #quiz-introduction-hero {
   background: linear-gradient(rgb(24, 49, 83), rgb(137, 43, 226));
   color: rgb(255, 255, 255);
@@ -167,7 +167,7 @@ input[type="submit"] {
   border-radius: 20px;
 }
 
-/* hidden overlay text for quiz */
+/* hidden overlay text for quiz introduction page */
 #hidden-popup-text {
   background-color: rgb(24, 49, 83);
   position: absolute;
@@ -201,6 +201,7 @@ input[type="submit"] {
 
 /* screen sizes greater than 250px */
 @media screen and (min-width: 250px) {
+
   /* header */
   #header-hero > h1 {
     font-size: 140%;
@@ -224,6 +225,7 @@ input[type="submit"] {
   .section-header-content > h2 span {
     padding: 5px;
   }
+
   /* quiz questins and answers section */
   .quiz-questions {
     font-size: 110%;
@@ -234,7 +236,7 @@ input[type="submit"] {
     padding: 7px;
   }
 
-  /* hidden quiz result page for users */
+  /* hidden main quiz result page */
   .review-users > p {
     font-size: 90%;
   }
@@ -252,6 +254,7 @@ input[type="submit"] {
     font-size: 120%;
     padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
   }
 
   /* footer */
@@ -260,7 +263,7 @@ input[type="submit"] {
     font-size: 120%;
   }
 
-  /* introduction page / index.html  */
+  /* Quiz introduction page / index.html  */
   #quiz-introduction-hero {
     width: 80%;
     margin: 120px auto 0 auto;
@@ -296,7 +299,7 @@ input[type="submit"] {
     border-radius: 15px;
   }
 
-  /* hidden overlay text for quiz */
+  /* hidden overlay text for quiz introduction page */
   #hidden-popup-text {
     top: -30px;
     border-radius: 20px;
@@ -318,6 +321,7 @@ input[type="submit"] {
 
 /* screen sizes greater than 500px */
 @media screen and (min-width: 500px) {
+
   /* header */
   #header-hero > h1 {
     font-size: 170%;
@@ -354,7 +358,7 @@ input[type="submit"] {
     padding: 12px;
   } 
 
-  /* hidden quiz result page for users */
+  /* hidden main quiz result page */
   .review-users > p {
     font-size: 130%;
     margin-top: 30px;
@@ -381,7 +385,7 @@ input[type="submit"] {
     font-size: 150%;
   }
 
-  /* introduction page / index.html  */
+  /* Quiz introduction page / index.html  */
   #quiz-introduction-hero {
     width: 70%;
     margin: 180px auto 0 auto;
@@ -415,7 +419,7 @@ input[type="submit"] {
     border-radius: 15px;
   }
 
-  /* hidden overlay text for quiz */
+  /* hidden overlay text for quiz introduction page */
   #hidden-popup-text {
     top: 0;
     height: 440px;
@@ -433,6 +437,7 @@ input[type="submit"] {
 
 /* screen sizes greater than 750px */
 @media screen and (min-width: 750px) {
+  
   /* header */
   #header-hero > h1 {
     font-size: 220%;
@@ -467,7 +472,7 @@ input[type="submit"] {
     padding: 14px;
   }
 
-  /* hidden quiz result page for users */
+  /* hidden main quiz result page */
   .review-users > p {
     font-size: 140%;
     padding: 50px;
@@ -492,7 +497,7 @@ input[type="submit"] {
     font-size: 160%;
   }
 
-  /* introduction page / index.html  */
+  /* Quiz introduction page / index.html  */
   #quiz-introduction-hero {
     margin: 160px auto 0 auto;
   }
@@ -526,7 +531,7 @@ input[type="submit"] {
     border-radius: 15px;
   }
 
-  /* hidden overlay text for quiz */
+  /* hidden overlay text for quiz introduction page */
   .close-quiz-info > .fa-xmark {
     font-size: 130%;
     margin-right: 10px;

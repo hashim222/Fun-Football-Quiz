@@ -1,8 +1,7 @@
 /**
  * All the Questions and Answers data stored in this array object
  */
- let myQuestions = [
-  {
+let myQuestions = [{
     question: "Which country won the first ever World Cup in 1930?",
     answers: {
       optn1: "Australia",
@@ -13,8 +12,7 @@
     correctAns: 4,
   },
   {
-    question:
-      "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
+    question: "Can you name the former Germany international who went on to become a professional wrestler in the WWE?",
     answers: {
       optn1: "Tim Wiese",
       optn2: "Dwayne Johnson",
@@ -34,8 +32,7 @@
     correctAns: 3,
   },
   {
-    question:
-      "English rock star Elton John was twice the owner of which football club?",
+    question: "English rock star Elton John was twice the owner of which football club?",
     answers: {
       optn1: "Watford",
       optn2: "Liverpool",
@@ -45,8 +42,7 @@
     correctAns: 1,
   },
   {
-    question:
-      "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
+    question: "Rangers tried to sign which superstar after Alex McLeish was alerted to his ability through popular video game Football Manager?",
     answers: {
       optn1: "Cristiano Ronaldo",
       optn2: "Lionel Messi",
@@ -56,8 +52,7 @@
     correctAns: 2,
   },
   {
-    question:
-      "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
+    question: "Which Portuguese team did Ronaldo play for before signing for Manchester United?",
     answers: {
       optn1: "Sporting",
       optn2: "FC Barcelona",
@@ -77,8 +72,7 @@
     correctAns: 4,
   },
   {
-    question:
-      "Ronaldo helped Portugal win the European Championship in which year?",
+    question: "Ronaldo helped Portugal win the European Championship in which year?",
     answers: {
       optn1: "2020",
       optn2: "2016",
@@ -88,8 +82,7 @@
     correctAns: 2,
   },
   {
-    question:
-      "Which German multinational sportswear company is Messi an ambassador for?",
+    question: "Which German multinational sportswear company is Messi an ambassador for?",
     answers: {
       optn1: "Nike",
       optn2: "Gucci",
@@ -99,8 +92,7 @@
     correctAns: 3,
   },
   {
-    question:
-      "In which year did the European Championship expand from 16 teams to 24 teams?",
+    question: "In which year did the European Championship expand from 16 teams to 24 teams?",
     answers: {
       optn1: "Euro 2016",
       optn2: "Euro 2012",
@@ -111,30 +103,31 @@
   },
 ];
 
-// Question number increase variable
+// Question number increases variable
 const increaseQuestionsNum = document.querySelector("#increase-questions");
 
-// Question points increase variable
+// Question points increases variable
 const increaseQuizScore = document.querySelector("#increase-points");
 
 // varibale for Quiz Questions
 const quizQuestionElem = document.querySelector(".quiz-questions");
 
-// Answers variable
+// Quiz Answers variable
 const multipleBtnsInQuiz = document.querySelectorAll(".multiple-choices-answers");
 
-// after the user has answerd all the questions it will give them options of restart and home button
+// After the user has answerd all the questions it will give them options of restart and home button
 const quizResult = document.querySelector(".quiz-result");
 
-// display result
+// Display result
 const displayUsersReviewText = document.querySelector(".review-users");
 const showResult = document.querySelector("#show-result");
 
+// Keep a tracks of current questions
 let currentQuestion = {};
 
-let acceptAnswers = false
+let acceptAnswers = false;
 
-// keep a track of question user has answerd
+// keep a track of question that user has answered
 let questionsCount;
 
 //"points" is created to increases users points
@@ -177,12 +170,12 @@ function footballGameData() {
     /**
      * this fucntion delays time out after user see their result text
      */
-      setTimeout(function(){
-        overlayPage();
-      }, 5000)
-     quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
-     return undefined
-    }
+    setTimeout(function () {
+      overlayPage();
+    }, 5000);
+    quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
+    return undefined;
+  }
 
   questionsCount++;
   increaseQuestionsNum.innerHTML = questionsCount;
@@ -199,25 +192,25 @@ function footballGameData() {
   // This will prevent repeating the previous questions
   duplicateMyQuestions.splice(generatesIndex, 1);
 
-  acceptAnswers = true
+  acceptAnswers = true;
 }
 
 multipleBtnsInQuiz.forEach((btns) => {
   btns.addEventListener("click", function (e) {
- if(!acceptAnswers) return;
+    if (!acceptAnswers) return;
 
- acceptAnswers = false
+    acceptAnswers = false;
     // Gets current value from innerhtml when clicked
     let usersSelects = e.currentTarget;
 
-    // gets the value from the inside of "data-value" attribute
+    // Gets the value from the inside of "data-value" attribute
     let usersSelectedValue = usersSelects.getAttribute("data-value");
 
-    // compares users selected value and correct answer
+    // Compares users selected value and correct answer
     let checkIfTrue =
       parseInt(usersSelectedValue) === currentQuestion.correctAns ?
-         "correct-answer"
-        : "incorrect-answer";
+      "correct-answer" :
+      "incorrect-answer";
 
     if (checkIfTrue === "correct-answer") {
       increaseUsersPoints(points);
@@ -228,7 +221,7 @@ multipleBtnsInQuiz.forEach((btns) => {
     }
 
     usersSelects.classList.add(checkIfTrue);
-    
+
     setTimeout(function () {
       usersSelects.classList.remove(checkIfTrue);
       footballGameData();
@@ -237,7 +230,7 @@ multipleBtnsInQuiz.forEach((btns) => {
 });
 
 /**
- * this function will increases users points if their answer is correct
+ * This function will increases users points if their answer is correct
  */
 function increaseUsersPoints() {
   let increasePoints = 100;
@@ -247,7 +240,7 @@ function increaseUsersPoints() {
 }
 
 /**
- *  this function will increases users correct questions if their answer is correct
+ *  This function will increases users correct questions if their answer is correct
  */
 function increaseQuestionsResultInTotal() {
   let calculateResult = 1;
@@ -256,7 +249,7 @@ function increaseQuestionsResultInTotal() {
 }
 
 /**
- * generates random questions in this function
+ * Generates random questions in this function
  */
 function generatesRandomQuiz() {
   let randomGenerates = Math.floor(Math.random() * duplicateMyQuestions.length);
