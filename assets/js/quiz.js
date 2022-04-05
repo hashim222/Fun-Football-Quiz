@@ -1,3 +1,5 @@
+/* This quiz was built with the help of James Quick's Udemy course. The link can be found in the readme. */
+
 /**
  * All the Questions and Answers data stored in this array object
  */
@@ -173,6 +175,8 @@ function footballGameData() {
     setTimeout(function () {
       overlayPage();
     }, 5000);
+    
+    /* This part of the quiz was built with help from a florin pop YouTube video. The link can be found in the readme.*/
     quizResult.innerHTML = `<h1>You answerd ${calculateTotalCorrectAnswers} out of ${TOTAL_ANSWERS}</h1> <p>Press the restart button below to try again👇<p> <button class="end-page-btn" onclick="window.location.assign('index.html')">Home</button> <button class="end-page-btn" onclick="location.reload()">Restart</button>`;
     return undefined;
   }

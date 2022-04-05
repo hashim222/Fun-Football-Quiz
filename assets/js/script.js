@@ -16,6 +16,8 @@ enterUser.addEventListener('keydown', function (e) {
   }
 });
 
+/* With the help of W3school, I built this popup overlay page */
+
 /**
  * This fucntion is for popup page for Quiz information
  */

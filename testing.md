@@ -38,13 +38,12 @@
    I confirm that I checked the javascript code by using [Jshint](https://jshint.com/) and did not find any errors.
    
  ## Bugs
-
-* ### Bugs Occurred
-
-
  
 * ### Bugs Fixed
+ 
+   * There was an issue with the footer, which wasn't sticking to the bottom of the page.
+
+   * On the main quiz page, I wasn't experiencing any issues if the user answers slowly. However, if the user presses the button quickly, the result appears multiple times. This problem has been resolved.
 
 
 
-* ### Unfixed Bugs

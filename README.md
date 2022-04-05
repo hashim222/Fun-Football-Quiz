@@ -199,7 +199,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 * ### JS Code
   * The quiz information overlay page was created with a bit of help from W3school.
   * Quiz was created with the help of [Build a Quiz App with HTML, CSS, and JavaScript (Udemy)](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/).
-  * End bit of main quiz page after user has answerd all the question help was taken from youtube [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA).
+  * End bit of main quiz page after user has answerd all the question help was taken from youtube channel [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA).
 
 * ### Content
   * By making this project I had plenty of help from the [Slack Community](https://slack.com/intl/en-gb/).
@@ -210,7 +210,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
    *  When a user refreshes the page, the username input field stays focused. This was taken from [LOVE MATHS](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode)
 
-   * The quiz questions and answers were taken from [GOAL](https://www.goal.com/en-us).
+   * The quiz questions and answers were taken from [GOAL Website](https://www.goal.com/en-us).
 
 
 
