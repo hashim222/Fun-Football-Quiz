@@ -95,6 +95,8 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
    * The quiz has ten questions in total.
    * In each question, there are four options, so clicking on one takes the user to the next one.
    * The background color will turn green if the user answers correctly, and red if the user answers incorrectly.
+      ![image for correct answer](assets/images/Readme-Images/correct-answer.png)
+      ![image for wrong answer](assets/images/Readme-Images/wrong-answer.png)
    * After answering all the questions, the user will be taken to the result page.
 
 * ### Users Result Page
@@ -112,8 +114,6 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
     ![image for welldone users](assets/images/Readme-Images/welldone-users.png)
 
-  * The review will disappear shortly after the user receives it.
-
 * ### Home Button And Restart Button
   * By clicking the home button, the user will be taken to the quiz introduction page 
 
@@ -127,6 +127,10 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
     ![image for footer follow us on social media ](assets/images/Readme-Images/follow-us.png)
 
+## Future Feather
+* I would like to save a user's high scores so that the user can play again with the saved high scores.
+* I would like to add more than 10 questions to the quiz with different difficulty levels.
+* If the user enters the wrong answer, the correct answer will be displayed to them.
 ## Wireframe
 * For the sites wireframe, I used [Wireframe.cc](https://wireframe.cc/).
 * You can find websites wireframe inside the [wireframe.md](wireframe.md).
@@ -215,6 +219,6 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
 
 
 * ### Media
-  * favicon logo was taken from [Google](https://www.google.com/search?q=football+icon&tbm=isch&chips=q:football+icon,g_1:red:DzEFUJmS5D0%3D&rlz=1C1CHBF_en-GBGB959GB959&hl=en&sa=X&ved=2ahUKEwjDz5LR2vX2AhV38LsIHZNoDN0Q4lYoB3oECAEQKg&biw=1519&bih=714#imgrc=V0k4UncPwJvZjM).
+  * favicon logo was taken from [dreamstime website](https://www.dreamstime.com/flat-football-icon-soccer-ball-vector-illustration-flat-football-icon-soccer-ball-red-circle-image105628452).
 
-  * The websites background image was taken from [wallpapersafari](https://wallpapersafari.com/w/qJsVwy).
+  * The websites background image was taken from [wallpapersafari website](https://wallpapersafari.com/w/qJsVwy).

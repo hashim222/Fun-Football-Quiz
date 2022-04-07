@@ -12,7 +12,7 @@ body {
   background-position: center;
   text-decoration: none;
   font-family: "Amiko", sans-serif;
-  }
+}
 a {
   text-decoration: none;
 }
@@ -356,7 +356,7 @@ input[type="submit"] {
   .multiple-choices-answers {
     font-size: 110%;
     padding: 12px;
-  } 
+  }
 
   /* hidden main quiz result page */
   .review-users > p {
@@ -441,8 +441,8 @@ input[type="submit"] {
   /* header */
   #header-hero > h1 {
     font-size: 220%;
-    padding: 60px;
-    margin-top: 30px;
+    padding: 40px;
+    margin-top: 15px;
   }
   .footbal-fun-icon {
     height: 1.5rem;

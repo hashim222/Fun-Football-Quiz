@@ -43,7 +43,20 @@
  
    * There was an issue with the footer, which wasn't sticking to the bottom of the page.
 
-   * On the main quiz page, I wasn't experiencing any issues if the user answers slowly. However, if the user presses the button quickly, the result appears multiple times. This problem has been resolved.
+   * On the main quiz page, I wasn't experiencing any issues if the user answers slowly. However, if the user presses the button quickly, the result appears multiple times. This problem has been solved.
 
+* ### Bugs unFixed
+    While I'm not sure if this was a bug, I thought to mention it in the bug section.
+   * I had to use this code <details>[display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  ]</details>
+multiple times in my CSS media query otherwise it wouldn't work as expected, so this bug remains unsolved.
 
 
