@@ -199,7 +199,7 @@ Website's live link [Fun Football Quiz](https://hashim222.github.io/Fun-Football
     ![this is an image for how cloning by links](/assets/images/Readme-Images/cloning-links.png)
              
 ## Credits
-  I did not find HTML and CSS too challenging since I had some experience with them and received some assistance from Slack, tutor support and W3school. However, Javascript was quite challenging even though I was familiar with the basics of js before I joined the course. Still, I needed help from outside sources, such as YouTube and Udemy.
+  I did not find HTML and CSS too challenging since I had some experience with them and received some assistance from Slack, tutor support and W3school. However, Javascript was quite challenging even though I was familiar with the basics of js before I joined the course. Still, I needed help from outside sources, such as YouTube and Udemy. You can find more information by clicking on the links below 
 * ### JS Code
   * The quiz information overlay page was created with a bit of help from W3school.
   * Quiz was created with the help of [Build a Quiz App with HTML, CSS, and JavaScript (Udemy)](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/).
